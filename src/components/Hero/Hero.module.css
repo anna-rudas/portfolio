@@ -1,0 +1,17 @@
+.hero {
+  background-color: var(--primary-dark);
+  background-image: url("../../images/background-hero.svg");
+  color: var(--primary-light);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--gap) * 7);
+  align-items: flex-start;
+  justify-content: center;
+  padding: calc(var(--padding) * 4);
+}
+
+.heroText {
+  width: 90%;
+  max-width: 800px;
+}

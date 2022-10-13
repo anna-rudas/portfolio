@@ -5,7 +5,7 @@
   --primary-dark: #000;
   --primary-light: #fff;
   --text-bg: #dbdcdd;
-  --padding: 10px;
+  --padding: 5px;
   --margin: 10px;
   --gap: 5px;
   --border-radius: 3px;
@@ -30,9 +30,11 @@ body {
 }
 
 .wrapper {
-  height: 100%;
   background-image: url("./images/background.svg");
+  background-repeat: repeat;
   font-family: var(--font-secondary);
+  font-size: 1rem;
+  font-weight: 400;
 }
 
 a {
