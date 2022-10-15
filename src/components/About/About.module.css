@@ -1,0 +1,65 @@
+.skills {
+  margin-top: calc(var(--margin) * 8);
+  display: flex;
+  width: 100%;
+  gap: calc(var(--gap) * 12);
+  justify-content: center;
+}
+
+.skillsImgCon {
+  width: 10%;
+  min-width: 250px;
+  max-width: 350px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.imgFrame {
+  background-color: var(--primary-dark);
+  position: relative;
+  height: 100%;
+  min-height: 350px;
+  max-height: 400px;
+  width: 100%;
+  min-width: 250px;
+  max-width: 350px;
+  border-top-right-radius: var(--border-radius-accent);
+}
+
+.img {
+  border-top-right-radius: var(--border-radius-accent);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: var(--img-frame);
+  bottom: var(--img-frame);
+  background-image: url("../../images/about_me.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.skillsTextCon {
+  width: 100%;
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--gap) * 12);
+}
+
+.tagsCon {
+  display: flex;
+  gap: calc(var(--gap) * 2);
+  flex-wrap: wrap;
+}
+
+@media (max-width: 700px) {
+  .skills {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skillsTextCon {
+    gap: calc(var(--gap) * 6);
+  }
+}

@@ -10,6 +10,7 @@
   --gap: 5px;
   --border-radius: 3px;
   --border-radius-accent: 50px;
+  --img-frame: 15px;
   --font-primary: "Abril Fatface";
   --font-secondary: "Montserrat", sans-serif;
 }
@@ -35,6 +36,9 @@ body {
   font-family: var(--font-secondary);
   font-size: 1rem;
   font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 a {
@@ -43,4 +47,16 @@ a {
 
 li {
   list-style: none;
+}
+
+br {
+  content: "";
+  display: block;
+  margin: 15px 0;
+}
+
+@media (max-width: 480px) {
+  :root {
+    --img-frame: 10px;
+  }
 }

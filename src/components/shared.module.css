@@ -6,19 +6,22 @@
 
 .titlePrimary {
   color: var(--primary-dark);
-  font-size: 3rem;
+  font-size: 12vw;
+  margin-bottom: calc(var(--margin) * 2);
 }
 
 .titleSecondary {
   color: var(--primary-dark);
-  font-size: 1rem;
+  font-size: 2rem;
+  margin-bottom: calc(var(--margin) * 2);
 }
 
 .paragraph {
   font-family: var(--font-secondary);
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 400;
   color: var(--primary-dark);
+  line-height: 25px;
 }
 
 .titleHero {
@@ -31,6 +34,30 @@
   font-size: 1.5rem;
   font-weight: 400;
   color: var(--primary-light);
+  line-height: 35px;
+}
+
+.section {
+  padding: calc(var(--padding) * 13);
+  margin: calc(var(--margin) * 10) 0;
+  min-height: 50vh;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.sectionText {
+  width: 90%;
+  max-width: 800px;
+}
+
+.skillTags {
+  font-family: var(--font-secondary);
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: var(--primary-dark);
+  border-radius: var(--border-radius);
+  padding: var(--padding) calc(var(--padding) * 2);
+  background-color: var(--text-bg);
 }
 
 .btn {
@@ -75,6 +102,10 @@
   .titleHero {
     font-size: 9rem;
   }
+
+  .titlePrimary {
+    font-size: 9rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -84,5 +115,18 @@
 
   .paragraphHero {
     font-size: 1.3rem;
+  }
+
+  .titlePrimary {
+    font-size: 4.8rem;
+  }
+
+  .sectionText {
+    width: 100%;
+  }
+
+  .section {
+    margin: calc(var(--margin) * 5) 0;
+    padding: calc(var(--padding) * 4);
   }
 }
