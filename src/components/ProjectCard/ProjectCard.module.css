@@ -1,0 +1,80 @@
+.cardCon {
+  width: 80%;
+  min-width: 500px;
+  max-width: 900px;
+  display: flex;
+  min-height: 230px;
+  background-color: var(--primary-light);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+
+.projectName {
+  width: 50px;
+  background-color: var(--primary-dark);
+  border-top-left-radius: var(--border-radius);
+  border-bottom-left-radius: var(--border-radius);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.name {
+  text-transform: uppercase;
+  color: var(--primary-light);
+  transform: rotate(-90deg);
+  letter-spacing: 10px;
+  font-family: var(--font-primary);
+  font-size: 1.5rem;
+}
+
+.projectBody {
+  width: 100%;
+  background-color: var(--primary-light);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+}
+
+.projectDesc {
+  width: 60%;
+  height: 100%;
+  transition: all 0.5s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: calc(var(--padding) * 2);
+  padding-left: calc(var(--padding) * 5);
+  gap: calc(var(--gap) * 2);
+}
+
+.projectImg {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 40%;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%);
+  transition: all 0.5s ease-in-out;
+  opacity: 0.8;
+  border-top-right-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+}
+
+@media (hover: hover) {
+  .cardCon:hover {
+    cursor: pointer;
+  }
+
+  .cardCon:hover .projectImg {
+    width: 80%;
+    opacity: 1;
+  }
+
+  .cardCon:hover .projectDesc {
+    opacity: 0.2;
+  }
+}

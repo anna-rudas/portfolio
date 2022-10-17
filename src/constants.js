@@ -7,3 +7,5 @@ export const skillTags = [
   "React",
   "Responsive Design",
 ];
+
+export const skillTagsVoyage = ["JavaScript", "React", "Responsive Design"];

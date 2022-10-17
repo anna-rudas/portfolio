@@ -47,12 +47,6 @@
   gap: calc(var(--gap) * 12);
 }
 
-.tagsCon {
-  display: flex;
-  gap: calc(var(--gap) * 2);
-  flex-wrap: wrap;
-}
-
 @media (max-width: 700px) {
   .skills {
     flex-direction: column;

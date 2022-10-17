@@ -42,7 +42,7 @@ function About() {
               failing and learning from your mistakes.
             </p>
           </div>
-          <ul {...className(style.tagsCon)}>
+          <ul {...className(shared.tagsCon)}>
             {skillTags.map((currentTag) => {
               return (
                 <li key={currentTag} {...className(shared.skillTags)}>

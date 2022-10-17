@@ -13,7 +13,7 @@
 .titleSecondary {
   color: var(--primary-dark);
   font-size: 2rem;
-  margin-bottom: calc(var(--margin) * 2);
+  margin-bottom: calc(var(--margin) * 1);
 }
 
 .paragraph {
@@ -38,8 +38,8 @@
 }
 
 .section {
-  padding: calc(var(--padding) * 13);
-  margin: calc(var(--margin) * 10) 0;
+  padding: calc(var(--padding) * 5) calc(var(--padding) * 13);
+  margin: calc(var(--margin) * 5) 0;
   min-height: 50vh;
   width: 100%;
   max-width: 1200px;
@@ -60,6 +60,12 @@
   background-color: var(--text-bg);
 }
 
+.tagsCon {
+  display: flex;
+  gap: calc(var(--gap) * 2);
+  flex-wrap: wrap;
+}
+
 .btn {
   font-family: var(--font-primary);
   font-size: 1.5rem;
@@ -68,6 +74,7 @@
   padding: var(--padding) calc(var(--padding) * 2);
   text-transform: uppercase;
   transition: all 0.3s ease-in-out;
+  margin: calc(var(--margin) * 3) 0;
 }
 
 .btnLight {
@@ -110,23 +117,30 @@
 
 @media (max-width: 480px) {
   .titleHero {
-    font-size: 4.8rem;
+    font-size: 4.5rem;
   }
 
   .paragraphHero {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+  }
+
+  .paragraph {
+    font-size: 1rem;
   }
 
   .titlePrimary {
-    font-size: 4.8rem;
+    font-size: 3.1rem;
+  }
+
+  .titleSecondary {
+    font-size: 1.8rem;
   }
 
   .sectionText {
-    width: 100%;
+    width: 95%;
   }
 
   .section {
-    margin: calc(var(--margin) * 5) 0;
     padding: calc(var(--padding) * 4);
   }
 }
