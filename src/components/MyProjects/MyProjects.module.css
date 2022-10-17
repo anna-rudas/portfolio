@@ -3,4 +3,6 @@
   flex-direction: column;
   align-items: center;
   margin-top: calc(var(--margin) * 4);
+  gap: calc(var(--gap) * 10);
+  width: 100%;
 }

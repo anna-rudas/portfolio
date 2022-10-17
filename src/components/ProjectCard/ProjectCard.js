@@ -2,25 +2,21 @@ import React from "react";
 import { className } from "../../helpers";
 import style from "./ProjectCard.module.css";
 import shared from "../shared.module.css";
-import projectImgVoyage from "../../images/projects/voyage.png";
-import { skillTagsVoyage } from "../../constants";
 
-function ProjectCard() {
+function ProjectCard({ name, title, intro, skillTags, projectImg }) {
   return (
-    <div {...className(style.cardCon)}>
+    <a href="." {...className(style.cardCon)}>
       <div {...className(style.projectName)}>
-        <div {...className(style.name)}>Voyage</div>
+        <div {...className(style.name)}>{name}</div>
       </div>
       <div {...className(style.projectBody)}>
         <div {...className(style.projectDesc)}>
           <span {...className(shared.title, shared.titleSecondary)}>
-            Landing page
+            {title}
           </span>
-          <span {...className(shared.paragraph)}>
-            A landing page for the fictional travel business Voyage.
-          </span>
+          <span {...className(shared.paragraph)}>{intro}</span>
           <ul {...className(shared.tagsCon)}>
-            {skillTagsVoyage.map((currentTag) => {
+            {skillTags.map((currentTag) => {
               return (
                 <li key={currentTag} {...className(shared.skillTags)}>
                   {currentTag}
@@ -30,11 +26,11 @@ function ProjectCard() {
           </ul>
         </div>
         <div
-          style={{ backgroundImage: "url(" + projectImgVoyage + ")" }}
+          style={{ backgroundImage: "url(" + projectImg + ")" }}
           {...className(style.projectImg)}
         ></div>
       </div>
-    </div>
+    </a>
   );
 }
 

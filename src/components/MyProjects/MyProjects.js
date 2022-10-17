@@ -3,6 +3,7 @@ import { className } from "../../helpers";
 import style from "./MyProjects.module.css";
 import shared from "../shared.module.css";
 import ProjectCard from "../ProjectCard";
+import { myProjects } from "../../constants";
 
 function MyProjects() {
   return (
@@ -17,7 +18,9 @@ function MyProjects() {
         More about my projects
       </button>
       <div {...className(style.cardsCon)}>
-        <ProjectCard />
+        {myProjects.map((currentProject) => {
+          return <ProjectCard {...currentProject} key={currentProject.name} />;
+        })}
       </div>
     </div>
   );
