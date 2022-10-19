@@ -2,10 +2,9 @@ import React, { useState } from "react";
 import { className } from "../../helpers";
 import style from "./Header.module.css";
 import shared from "../shared.module.css";
-import { navLinksHome } from "../../constants";
 import HamburgerIcon from "../../icons/HamburgerIcon";
 
-function Header() {
+function Header({ navLinks }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
@@ -16,7 +15,7 @@ function Header() {
         </a>
         <nav {...className(style.nav, isMenuOpen && style.mobileMenu)}>
           <ul {...className(style.linksCon)}>
-            {navLinksHome.map((current) => {
+            {navLinks.map((current) => {
               return (
                 <li key={current}>
                   <a

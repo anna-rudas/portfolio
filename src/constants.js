@@ -34,7 +34,7 @@ export const myProjects = [
     name: "Notelux",
     title: "Notes app",
     intro:
-      "A note taking application, where your notes are stored in local storage You can specify your note’s colour, the theme, or switch between list and grid view.",
+      "A note taking application, where your notes are stored in local storage You can specify your note's colour, the theme, or switch between list and grid view.",
     skillTags: skillTagsNotelux,
     projectImg: projectImgNotelux,
   },
@@ -47,4 +47,21 @@ export const myProjects = [
   },
 ];
 
-export const navLinksHome = ["about", "projects", "contact"];
+export const navLinksMain = ["about", "projects", "contact"];
+export const navLinksProjects = ["memery", "notelux", "voyage"];
+
+export const heroMain = {
+  before: "Hello, my name is",
+  main: "Anna Rudas",
+  intro:
+    " I am a junior frontend developer based in Germany, who doesn't mind making mistakes because she knows she can learn from them.",
+  btnText: "Download my CV",
+};
+
+export const heroProjects = {
+  before: "",
+  main: "My Projects",
+  intro:
+    "On this page you can read about my projects in more detail. To see what I'm currently working on, take a look around on my github.",
+  btnText: "Back to home page",
+};

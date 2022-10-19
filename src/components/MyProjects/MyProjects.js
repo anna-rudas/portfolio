@@ -4,6 +4,7 @@ import style from "./MyProjects.module.css";
 import shared from "../shared.module.css";
 import ProjectCard from "../ProjectCard";
 import { myProjects } from "../../constants";
+import { Link } from "react-router-dom";
 
 function MyProjects() {
   return (
@@ -14,9 +15,11 @@ function MyProjects() {
         about them by clicking the link below, or check out my github to see
         what I&apos;m currently working on.
       </p>
-      <button {...className(shared.btn, shared.btnDark)}>
-        More about my projects
-      </button>
+      <Link to="/projects">
+        <button {...className(shared.btn, shared.btnDark)}>
+          More about my projects
+        </button>
+      </Link>
       <div {...className(style.cardsCon)}>
         {myProjects.map((currentProject) => {
           return <ProjectCard {...currentProject} key={currentProject.name} />;

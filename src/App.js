@@ -1,22 +1,17 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
-import About from "./components/About";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
-import Hero from "./components/Hero";
-import MyProjects from "./components/MyProjects";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Main from "./Main";
+import Projects from "./Projects";
 
 function App() {
   return (
-    <div className="wrapper">
-      <Header />
-      <Hero />
-      <About />
-      <MyProjects />
-      <Contact />
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="/projects" element={<Projects />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

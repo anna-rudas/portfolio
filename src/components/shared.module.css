@@ -36,7 +36,6 @@
   font-weight: 400;
   color: var(--primary-light);
   line-height: 35px;
-  margin-top: 50px;
 }
 
 .section {
@@ -119,7 +118,7 @@
 
 @media (max-width: 480px) {
   .titleHero {
-    font-size: 4.5rem;
+    font-size: 17vw;
   }
 
   .paragraphHero {
