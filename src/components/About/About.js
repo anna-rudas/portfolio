@@ -6,7 +6,7 @@ import { skillTags } from "../../constants";
 
 function About() {
   return (
-    <div {...className(shared.section)}>
+    <div {...className(shared.section)} id="about">
       <h2 {...className(shared.title, shared.titlePrimary)}>About me</h2>
       <p {...className(shared.sectionText, shared.paragraph)}>
         I have recently completed my Bachelor of Science, majoring in Electrical

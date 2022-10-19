@@ -13,6 +13,7 @@
   --img-frame: 15px;
   --font-primary: "Abril Fatface";
   --font-secondary: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -40,6 +41,7 @@ body {
   flex-direction: column;
   align-items: center;
   cursor: default;
+  position: relative;
 }
 
 a {

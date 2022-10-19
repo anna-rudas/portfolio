@@ -46,3 +46,5 @@ export const myProjects = [
     projectImg: projectImgVoyage,
   },
 ];
+
+export const navLinksHome = ["about", "projects", "contact"];

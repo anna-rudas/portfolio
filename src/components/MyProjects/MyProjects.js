@@ -7,7 +7,7 @@ import { myProjects } from "../../constants";
 
 function MyProjects() {
   return (
-    <div {...className(shared.section)}>
+    <div {...className(shared.section)} id="projects">
       <h2 {...className(shared.title, shared.titlePrimary)}>My Projects</h2>
       <p {...className(shared.sectionText, shared.paragraph)}>
         Here are some of the projects I have developed. You can find out more

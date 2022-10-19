@@ -5,6 +5,7 @@
 }
 
 .titlePrimary {
+  margin-top: 50px;
   color: var(--primary-dark);
   font-size: 12vw;
   margin-bottom: calc(var(--margin) * 2);
@@ -35,6 +36,7 @@
   font-weight: 400;
   color: var(--primary-light);
   line-height: 35px;
+  margin-top: 50px;
 }
 
 .section {

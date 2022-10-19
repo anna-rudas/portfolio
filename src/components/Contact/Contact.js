@@ -5,7 +5,7 @@ import shared from "../shared.module.css";
 
 function Contact() {
   return (
-    <div {...className(shared.section)}>
+    <div {...className(shared.section)} id="contact">
       <h2 {...className(shared.title, shared.titlePrimary)}>Contact</h2>
       <p {...className(shared.sectionText, shared.paragraph)}>
         Write to me here or send me an email. You can also contact me on

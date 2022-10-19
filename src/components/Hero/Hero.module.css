@@ -5,10 +5,11 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  gap: calc(var(--gap) * 5);
+  gap: calc(var(--gap) * 3);
   align-items: flex-start;
   justify-content: center;
   padding: calc(var(--padding) * 13);
+  padding-top: calc(var(--padding) * 20);
   width: 100%;
   margin-bottom: calc(var(--margin) * 5);
 }
