@@ -39,6 +39,18 @@
   text-align: center;
 }
 
+.credit::selection {
+  color: var(--primary-dark);
+  background: var(--primary-light);
+}
+
+@media (hover: hover) {
+  .icons:hover {
+    fill: var(--text-bg);
+    transform: scale(1.1);
+  }
+}
+
 @media (max-width: 480px) {
   .iconCon {
     flex-direction: column;

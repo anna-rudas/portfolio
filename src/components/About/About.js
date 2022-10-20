@@ -3,6 +3,7 @@ import { className } from "../../helpers";
 import style from "./About.module.css";
 import shared from "../shared.module.css";
 import { skillTags } from "../../constants";
+import aboutImg from "../../images/about-me.jpg";
 
 function About() {
   return (
@@ -25,10 +26,12 @@ function About() {
         me an email.
       </p>
       <div {...className(style.skills)}>
-        <div {...className(style.skillsImgCon)}>
-          <div {...className(style.imgFrame)}>
-            <div {...className(style.img)} />
-          </div>
+        <div {...className(style.imgCon)}>
+          <img
+            {...className(style.img, shared.frame, shared.frameRight)}
+            src={aboutImg}
+            alt=""
+          />
         </div>
         <div {...className(style.skillsTextCon)}>
           <div {...className(style.skillsText)}>

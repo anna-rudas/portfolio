@@ -4,43 +4,25 @@
   width: 100%;
   gap: calc(var(--gap) * 12);
   justify-content: center;
+  align-items: flex-start;
 }
 
-.skillsImgCon {
-  width: 10%;
-  min-width: 250px;
-  max-width: 350px;
+.imgCon {
+  max-height: 100%;
+  max-width: 300px;
+  width: 50%;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
 }
 
-.imgFrame {
-  background-color: var(--primary-dark);
-  position: relative;
-  height: 100%;
-  min-height: 350px;
-  max-height: 400px;
-  width: 100%;
-  min-width: 250px;
-  max-width: 350px;
-  border-top-right-radius: var(--border-radius-accent);
-}
-
 .img {
-  border-top-right-radius: var(--border-radius-accent);
-  position: absolute;
   width: 100%;
-  height: 100%;
-  left: var(--img-frame);
-  bottom: var(--img-frame);
-  background-image: url("../../images/about_me.jpg");
-  background-position: center;
-  background-size: cover;
+  height: auto;
 }
 
 .skillsTextCon {
-  width: 100%;
+  width: 50%;
   max-width: 450px;
   display: flex;
   flex-direction: column;
@@ -55,5 +37,10 @@
 
   .skillsTextCon {
     gap: calc(var(--gap) * 6);
+    width: 100%;
+  }
+
+  .imgCon {
+    width: 100%;
   }
 }

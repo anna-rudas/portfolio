@@ -16,7 +16,7 @@
 
 @media (max-width: 480px) {
   .hero {
-    padding: calc(var(--padding) * 15) calc(var(--padding) * 4);
+    padding: calc(var(--padding) * 15) calc(var(--padding) * 5);
     gap: calc(var(--gap) * 2);
   }
 }
