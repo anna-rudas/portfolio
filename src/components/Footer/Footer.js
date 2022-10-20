@@ -16,11 +16,10 @@ function Footer() {
           <EnvelopeIcon {...className(style.icons)} />
         </a>
         <a href=".">
-          {" "}
           <GithubIcon {...className(style.icons)} />
         </a>
       </div>
-      <span {...className(style.credit)}>Designed and build by Anna Rudas</span>
+      <span {...className(style.credit)}>Designed and built by Anna Rudas</span>
     </div>
   );
 }

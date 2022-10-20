@@ -1,6 +1,12 @@
-import projectImgVoyage from "./images/projects/voyage.png";
-import projectImgMemery from "./images/projects/memery.png";
-import projectImgNotelux from "./images/projects/notelux.png";
+import projectImgVoyage from "./images/project-cards/voyage.png";
+import projectImgMemery from "./images/project-cards/memery.png";
+import projectImgNotelux from "./images/project-cards/notelux.png";
+import desktopScnMemery from "./images/projects/memery-desktop.png";
+import mobileScnMemery from "./images/projects/memery-mobile.png";
+import desktopScnNotelux from "./images/projects/notelux-desktop.png";
+import mobileScnNotelux from "./images/projects/notelux-mobile.png";
+import desktopScnVoyage from "./images/projects/voyage-desktop.png";
+import mobileScnVoyage from "./images/projects/voyage-mobile.png";
 
 export const skillTags = [
   "HTML",
@@ -34,7 +40,7 @@ export const myProjects = [
     name: "Notelux",
     title: "Notes app",
     intro:
-      "A note taking application, where your notes are stored in local storage You can specify your note's colour, the theme, or switch between list and grid view.",
+      "A note taking application, where your notes are stored in local storage. You can specify your note's colour, the theme, or switch between list and grid view.",
     skillTags: skillTagsNotelux,
     projectImg: projectImgNotelux,
   },
@@ -65,3 +71,36 @@ export const heroProjects = {
     "On this page you can read about my projects in more detail. To see what I'm currently working on, take a look around on my github.",
   btnText: "Back to home page",
 };
+
+export const projectDetails = [
+  {
+    projectName: "memery",
+    text: [
+      "I have been an avid collector of different types of cat images and I have finally found a use for it: a memory game! I love using my developer skills to create fun games like this that I can share with my friends.",
+      "The game offers three different types of card pack sizes and types for you to choose from. You can track your progress and how many turns it takes to complete the game.",
+      "The most challenging aspect of this project was the styling, specifically with the cards grid, to make sure the cards don't overflow and to maintain a responsive design. This project also made me learn more about css transformations as that is what I used to rotate the cards and create the flipping effect.",
+    ],
+    mobileScn: mobileScnMemery,
+    desktopScn: desktopScnMemery,
+  },
+  {
+    projectName: "notelux",
+    text: [
+      "Notelux is a CRUD application, storing data in Local Storage. You can specify what colour you would like your notes to be, choose the theme (with the preference being stored so you don't lose it on reload) and switch between list and grid view.",
+      "This project gave me a lot of insight into how React works: I had trouble working out how to reuse components, and implement a Context API. It was very satisfactory to figure these things out and as a result I have gained a lot of confidence in using React.",
+      "The most fun part of this project was to implement a way to sort the notes and make sure the last modified is on top, especially because the layout consists of the notes stacked in columns, which I also wanted to keep roughly the same length. This project had a simple concept with a couple of challenging aspects, and I am very satisfied with how it turned out.",
+    ],
+    mobileScn: mobileScnNotelux,
+    desktopScn: desktopScnNotelux,
+  },
+  {
+    projectName: "voyage",
+    text: [
+      "With this project I wanted to concentrate on the styling and create a product that reflects my design skills. I enjoyed working on little details, for example checking to make sure the email input has the format of an email address and having a little warning if that is not the case.",
+      "This project taught me about the importance of choosing the right sized image and implementing lazy loading if necessary; this was my first time working on a project with so many images and I had issues with loading time as a consequence of this.",
+      "At the bottom of the page you can navigate to the credits page where you can find all the images I have used in the project.",
+    ],
+    mobileScn: mobileScnVoyage,
+    desktopScn: desktopScnVoyage,
+  },
+];

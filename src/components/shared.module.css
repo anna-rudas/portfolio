@@ -90,6 +90,21 @@
   color: var(--primary-light);
 }
 
+.frame {
+  border-radius: var(--border-radius);
+  border: 1px solid var(--primary-dark);
+}
+
+.frameRight {
+  border-top-right-radius: var(--border-radius-accent);
+  box-shadow: -10px 10px 0px var(--primary-dark);
+}
+
+.frameLeft {
+  border-top-left-radius: var(--border-radius-accent);
+  box-shadow: 10px 10px 0px var(--primary-dark);
+}
+
 @media (hover: hover) {
   .btn:hover {
     cursor: pointer;
@@ -143,5 +158,6 @@
 
   .section {
     padding: calc(var(--padding) * 4);
+    margin: calc(var(--margin) * 2) 0;
   }
 }
