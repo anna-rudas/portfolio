@@ -29,24 +29,24 @@ export const skillTagsVoyage = ["JavaScript", "React", "Responsive Design"];
 
 export const myProjects = [
   {
-    name: "Memery",
-    title: "Memory game",
+    name: "memery",
+    title: "memory game",
     intro:
       "A memory game with card packs of varying sizes and types. You can track your progress and how many turns it took to complete the game.",
     skillTags: skillTagsMemery,
     projectImg: projectImgMemery,
   },
   {
-    name: "Notelux",
-    title: "Notes app",
+    name: "notelux",
+    title: "notes app",
     intro:
       "A note taking application, where your notes are stored in local storage. You can specify your note's colour, the theme, or switch between list and grid view.",
     skillTags: skillTagsNotelux,
     projectImg: projectImgNotelux,
   },
   {
-    name: "Voyage",
-    title: "Landing page",
+    name: "voyage",
+    title: "landing page",
     intro: "A landing page for the fictional travel business Voyage.",
     skillTags: skillTagsVoyage,
     projectImg: projectImgVoyage,

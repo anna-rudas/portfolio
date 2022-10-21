@@ -5,7 +5,7 @@ import shared from "../shared.module.css";
 
 function ProjectCard({ name, title, intro, skillTags, projectImg }) {
   return (
-    <a href="." {...className(style.cardCon)}>
+    <a href={"/projects/#" + name} {...className(style.cardCon)}>
       <div {...className(style.projectName)}>
         <div {...className(style.name)}>{name}</div>
       </div>
@@ -29,6 +29,9 @@ function ProjectCard({ name, title, intro, skillTags, projectImg }) {
           style={{ backgroundImage: "url(" + projectImg + ")" }}
           {...className(style.projectImg)}
         ></div>
+      </div>
+      <div {...className(style.btnCon)}>
+        <div {...className(shared.btn, style.btn)}>Go to project</div>
       </div>
     </a>
   );

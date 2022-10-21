@@ -3,6 +3,7 @@ import { className } from "../../helpers";
 import style from "./Header.module.css";
 import shared from "../shared.module.css";
 import HamburgerIcon from "../../icons/HamburgerIcon";
+import { Link } from "react-router-dom";
 
 function Header({ navLinks }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,9 +11,9 @@ function Header({ navLinks }) {
   return (
     <div {...className(style.header)}>
       <div {...className(style.navList)}>
-        <a href="." {...className(style.initials)}>
+        <Link to="/" {...className(style.initials)}>
           AR
-        </a>
+        </Link>
         <nav {...className(style.nav, isMenuOpen && style.mobileMenu)}>
           <ul {...className(style.linksCon)}>
             {navLinks.map((current) => {

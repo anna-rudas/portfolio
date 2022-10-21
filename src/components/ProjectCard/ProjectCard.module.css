@@ -7,6 +7,7 @@
   background-color: var(--primary-light);
   box-shadow: 0 0 10px var(--text-bg);
   border-radius: var(--border-radius);
+  position: relative;
 }
 
 .projectName {
@@ -68,13 +69,52 @@
   border-bottom-right-radius: var(--border-radius);
 }
 
+.btnCon {
+  position: absolute;
+  inset: 0;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 0;
+}
+
+.btn {
+  border: 1px solid var(--primary-dark);
+  background-color: var(--primary-light);
+  color: var(--primary-dark);
+  opacity: 0;
+}
+
+@keyframes btnReveal {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @media (hover: hover) {
   .cardCon:hover {
     cursor: pointer;
   }
 
+  .cardCon:hover > .btnCon {
+    height: 100%;
+  }
+
+  .cardCon:hover .btn {
+    animation-name: btnReveal;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+  }
+
   .cardCon:hover .projectImg {
-    width: 80%;
+    width: 85%;
     opacity: 1;
   }
 
