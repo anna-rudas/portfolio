@@ -3,6 +3,7 @@ import { className } from "../../helpers";
 import style from "./Hero.module.css";
 import shared from "../shared.module.css";
 import { Link } from "react-router-dom";
+import ArrowIcon from "../../icons/ArrowIcon";
 
 function Hero({ before, main, intro, btnText, btnLink }) {
   return (
@@ -15,6 +16,9 @@ function Hero({ before, main, intro, btnText, btnLink }) {
       <Link to={btnLink}>
         <button {...className(shared.btn, shared.btnLight)}>{btnText}</button>
       </Link>
+      <div {...className(style.iconCon)}>
+        <ArrowIcon {...className(style.icon)} />
+      </div>
     </div>
   );
 }
