@@ -26,6 +26,8 @@
   align-items: center;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
+  animation-duration: 1.3s;
+  animation-name: arrowLoop;
 }
 
 .icon {
@@ -35,18 +37,6 @@
 }
 
 @keyframes arrowLoop {
-  0% {
-    bottom: 25px;
-  }
-  50% {
-    bottom: 100px;
-  }
-  100% {
-    bottom: 25px;
-  }
-}
-
-@keyframes arrowLoopMobile {
   0% {
     bottom: 25px;
   }
@@ -62,24 +52,12 @@
   .hero {
     gap: calc(var(--gap) * 3);
   }
+}
 
+@media (min-width: 1400px) {
   .icon {
     width: 60px;
     height: 60px;
-  }
-}
-
-@media (max-width: 800px) {
-  .iconCon {
-    animation-duration: 1.3s;
-    animation-name: arrowLoopMobile;
-  }
-}
-
-@media (min-width: 801px) {
-  .iconCon {
-    animation-duration: 2s;
-    animation-name: arrowLoop;
   }
 }
 
