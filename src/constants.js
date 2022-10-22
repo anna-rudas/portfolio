@@ -7,6 +7,28 @@ import desktopScnNotelux from "./images/projects/notelux-desktop.png";
 import mobileScnNotelux from "./images/projects/notelux-mobile.png";
 import desktopScnVoyage from "./images/projects/voyage-desktop.png";
 import mobileScnVoyage from "./images/projects/voyage-mobile.png";
+import LinkedInIcon from "./icons/LinkedInIcon";
+import EnvelopeIcon from "./icons/EnvelopeIcon";
+import GithubIcon from "./icons/GithubIcon";
+
+export const githubLink = "https://github.com/anna-rudas";
+export const emailAddress = "mailto:anna.rudas@protonmail.com";
+export const linkedInLink = "https://www.linkedin.com/in/annarudas/";
+
+export const footerLinks = [
+  {
+    icon: <LinkedInIcon />,
+    link: linkedInLink,
+  },
+  {
+    icon: <EnvelopeIcon />,
+    link: emailAddress,
+  },
+  {
+    icon: <GithubIcon />,
+    link: githubLink,
+  },
+];
 
 export const skillTags = [
   "HTML",
@@ -18,22 +40,13 @@ export const skillTags = [
   "Responsive Design",
 ];
 
-export const skillTagsMemery = ["JavaScript", "React", "Responsive Design"];
-export const skillTagsNotelux = [
-  "TypeScript",
-  "React",
-  "JavaScript",
-  "Responsive Design",
-];
-export const skillTagsVoyage = ["JavaScript", "React", "Responsive Design"];
-
 export const myProjects = [
   {
     name: "memery",
     title: "memory game",
     intro:
       "A memory game with card packs of varying sizes and types. You can track your progress and how many turns it took to complete the game.",
-    skillTags: skillTagsMemery,
+    skillTags: ["JavaScript", "React", "Responsive Design"],
     projectImg: projectImgMemery,
   },
   {
@@ -41,14 +54,14 @@ export const myProjects = [
     title: "notes app",
     intro:
       "A note taking application, where your notes are stored in local storage. You can specify your note's colour, the theme, or switch between list and grid view.",
-    skillTags: skillTagsNotelux,
+    skillTags: ["TypeScript", "React", "JavaScript", "Responsive Design"],
     projectImg: projectImgNotelux,
   },
   {
     name: "voyage",
     title: "landing page",
     intro: "A landing page for the fictional travel business Voyage.",
-    skillTags: skillTagsVoyage,
+    skillTags: ["JavaScript", "React", "Responsive Design"],
     projectImg: projectImgVoyage,
   },
 ];

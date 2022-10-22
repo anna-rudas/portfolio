@@ -10,12 +10,12 @@ function ProjectSection({ projectName, text, mobileScn, desktopScn }) {
       <div {...className(style.projectDetailsCon)}>
         <div {...className(style.details)}>
           <p {...className(shared.paragraph)}>
-            {text.map((currentParagraph) => {
+            {text.map((currentParagraph, index) => {
               return (
-                <>
+                <React.Fragment key={index}>
                   {currentParagraph}
                   <br />
-                </>
+                </React.Fragment>
               );
             })}
           </p>

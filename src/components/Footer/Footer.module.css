@@ -28,7 +28,8 @@
 .icons {
   width: 30px;
   height: 30px;
-  fill: var(--primary-light);
+  color: var(--primary-light);
+  transition: all 0.2s ease-in-out;
 }
 
 .credit {
@@ -46,7 +47,7 @@
 
 @media (hover: hover) {
   .icons:hover {
-    fill: var(--text-bg);
+    color: var(--text-bg);
     transform: scale(1.1);
   }
 }

@@ -60,3 +60,7 @@ br {
   display: block;
   margin: 15px 0;
 }
+
+svg {
+  fill: currentColor;
+}
