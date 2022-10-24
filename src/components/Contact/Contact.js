@@ -1,10 +1,36 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { className } from "../../helpers";
 import * as style from "./Contact.module.css";
 import * as shared from "../shared.module.css";
 import { linkedInLink, emailAddress } from "../../constants";
 
 function Contact() {
+  useEffect(() => {
+    const handleSubmit = (event) => {
+      event.preventDefault();
+
+      const myForm = event.target;
+      const formData = new FormData(myForm);
+
+      fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formData).toString(),
+      })
+        .then(() => console.log("Form successfully submitted"))
+        .catch((error) => alert(error));
+    };
+
+    const [firstForm, ...restForms] = Array.from(
+      document.querySelectorAll("form")
+    );
+
+    firstForm.addEventListener("submit", handleSubmit);
+    restForms.forEach((currentForm) => {
+      currentForm.addEventListener("submit", (event) => event.preventDefault());
+    });
+  }, []);
+
   return (
     <div {...className(shared.section)} id="contact">
       <h2 {...className(shared.title, shared.titlePrimary)}>Contact</h2>
