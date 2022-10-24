@@ -1,7 +1,7 @@
 import React from "react";
 import { className } from "../../helpers";
-import style from "./About.module.css";
-import shared from "../shared.module.css";
+import * as style from "./About.module.css";
+import * as shared from "../shared.module.css";
 import { skillTags, linkedInLink, emailAddress } from "../../constants";
 import aboutImg from "../../images/about-me.jpg";
 

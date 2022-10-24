@@ -1,7 +1,7 @@
 import React from "react";
 import { className } from "../../helpers";
-import style from "./Hero.module.css";
-import shared from "../shared.module.css";
+import * as style from "./Hero.module.css";
+import * as shared from "../shared.module.css";
 import { Link } from "react-router-dom";
 import ArrowIcon from "../../icons/ArrowIcon";
 

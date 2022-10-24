@@ -1,7 +1,7 @@
 import React from "react";
 import { className } from "../../helpers";
-import style from "./ProjectSection.module.css";
-import shared from "../shared.module.css";
+import * as style from "./ProjectSection.module.css";
+import * as shared from "../shared.module.css";
 
 function ProjectSection({
   projectName,

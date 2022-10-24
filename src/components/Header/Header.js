@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { className } from "../../helpers";
-import style from "./Header.module.css";
-import shared from "../shared.module.css";
+import * as style from "./Header.module.css";
+import * as shared from "../shared.module.css";
 import HamburgerIcon from "../../icons/HamburgerIcon";
 import { Link } from "react-router-dom";
 

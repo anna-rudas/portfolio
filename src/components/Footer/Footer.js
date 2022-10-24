@@ -1,6 +1,6 @@
 import React from "react";
 import { className } from "../../helpers";
-import style from "./Footer.module.css";
+import * as style from "./Footer.module.css";
 import { footerLinks } from "../../constants";
 
 function Footer() {

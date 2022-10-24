@@ -1,7 +1,7 @@
 import React from "react";
 import { className } from "../../helpers";
-import style from "./MyProjects.module.css";
-import shared from "../shared.module.css";
+import * as style from "./MyProjects.module.css";
+import * as shared from "../shared.module.css";
 import ProjectCard from "../ProjectCard";
 import { myProjects, githubLink } from "../../constants";
 import { Link } from "react-router-dom";
