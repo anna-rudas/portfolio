@@ -3,7 +3,7 @@ import { className } from "../../helpers";
 import style from "./MyProjects.module.css";
 import shared from "../shared.module.css";
 import ProjectCard from "../ProjectCard";
-import { myProjects } from "../../constants";
+import { myProjects, githubLink } from "../../constants";
 import { Link } from "react-router-dom";
 
 function MyProjects() {
@@ -12,13 +12,19 @@ function MyProjects() {
       <h2 {...className(shared.title, shared.titlePrimary)}>My Projects</h2>
       <p {...className(shared.sectionText, shared.paragraph)}>
         Here are some of the projects I have developed. You can find out more
-        about them by clicking the link below, or check out my github to see
-        what I&apos;m currently working on.
+        about them by clicking the link below, or check out my{" "}
+        <a
+          {...className(shared.links)}
+          target="_blank"
+          rel="noreferrer"
+          href={githubLink}
+        >
+          {"Github"}
+        </a>{" "}
+        to see what I&apos;m currently working on.
       </p>
-      <Link to="/projects">
-        <button {...className(shared.btn, shared.btnDark)}>
-          More about my projects
-        </button>
+      <Link to="/projects" {...className(shared.btn, shared.btnDark)}>
+        More about my projects
       </Link>
       <div {...className(style.cardsCon)}>
         {myProjects.map((currentProject) => {

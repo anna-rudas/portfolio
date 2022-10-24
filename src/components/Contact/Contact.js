@@ -2,14 +2,27 @@ import React from "react";
 import { className } from "../../helpers";
 import style from "./Contact.module.css";
 import shared from "../shared.module.css";
+import { linkedInLink, emailAddress } from "../../constants";
 
 function Contact() {
   return (
     <div {...className(shared.section)} id="contact">
       <h2 {...className(shared.title, shared.titlePrimary)}>Contact</h2>
       <p {...className(shared.sectionText, shared.paragraph)}>
-        Write to me here or send me an email. You can also contact me on
-        LinkedIn.
+        Write to me here or send me an{" "}
+        <a {...className(shared.links)} href={emailAddress}>
+          {"email"}
+        </a>
+        . You can also contact me on{" "}
+        <a
+          {...className(shared.links)}
+          target="_blank"
+          rel="noreferrer"
+          href={linkedInLink}
+        >
+          {"Linkedin"}
+        </a>
+        .
       </p>
       <div {...className(style.formCon)}>
         <form {...className(style.form, shared.frame, shared.frameLeft)}>

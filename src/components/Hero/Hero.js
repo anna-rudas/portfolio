@@ -13,8 +13,8 @@ function Hero({ before, main, intro, btnText, btnLink }) {
       <span {...className(shared.paragraphHero, shared.sectionText)}>
         {intro}
       </span>
-      <Link to={btnLink}>
-        <button {...className(shared.btn, shared.btnLight)}>{btnText}</button>
+      <Link to={btnLink} {...className(shared.btn, shared.btnLight)}>
+        {btnText}
       </Link>
       <div {...className(style.iconCon)}>
         <ArrowIcon {...className(style.icon)} />

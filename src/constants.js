@@ -103,6 +103,8 @@ export const projectDetails = [
     ],
     mobileScn: mobileScnMemery,
     desktopScn: desktopScnMemery,
+    github: "https://github.com/anna-rudas/memery",
+    website: "https://a-simple-memery-game.netlify.app/",
   },
   {
     projectName: "notelux",
@@ -113,6 +115,8 @@ export const projectDetails = [
     ],
     mobileScn: mobileScnNotelux,
     desktopScn: desktopScnNotelux,
+    github: "https://github.com/anna-rudas/notelux",
+    website: "https://notelux.netlify.app/",
   },
   {
     projectName: "voyage",
@@ -123,5 +127,7 @@ export const projectDetails = [
     ],
     mobileScn: mobileScnVoyage,
     desktopScn: desktopScnVoyage,
+    github: "https://github.com/anna-rudas/voyage-landing-page",
+    website: "https://voyage-landing-page.netlify.app/",
   },
 ];

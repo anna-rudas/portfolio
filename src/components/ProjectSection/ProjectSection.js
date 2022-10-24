@@ -3,7 +3,14 @@ import { className } from "../../helpers";
 import style from "./ProjectSection.module.css";
 import shared from "../shared.module.css";
 
-function ProjectSection({ projectName, text, mobileScn, desktopScn }) {
+function ProjectSection({
+  projectName,
+  text,
+  mobileScn,
+  desktopScn,
+  github,
+  website,
+}) {
   return (
     <div {...className(shared.section)} id={projectName}>
       <h2 {...className(shared.title, shared.titlePrimary)}>{projectName}</h2>
@@ -20,12 +27,22 @@ function ProjectSection({ projectName, text, mobileScn, desktopScn }) {
             })}
           </p>
           <div {...className(style.btnsCon)}>
-            <button {...className(shared.btn, shared.btnDark, style.btn)}>
+            <a
+              href={github}
+              target="_blank"
+              rel="noreferrer"
+              {...className(shared.btn, shared.btnDark, style.btn)}
+            >
               Github
-            </button>
-            <button {...className(shared.btn, shared.btnDark, style.btn)}>
+            </a>
+            <a
+              href={website}
+              target="_blank"
+              rel="noreferrer"
+              {...className(shared.btn, shared.btnDark, style.btn)}
+            >
               Website
-            </button>
+            </a>
           </div>
         </div>
         <div {...className(style.mobileScnCon)}>

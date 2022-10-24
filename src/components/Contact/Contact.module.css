@@ -87,6 +87,11 @@
     color: var(--primary-light);
     box-shadow: none;
   }
+  .btnSubmit:focus-visible {
+    background-color: var(--primary-dark);
+    color: var(--primary-light);
+    box-shadow: none;
+  }
 }
 
 @media (max-width: 700px) {

@@ -10,7 +10,7 @@ function Footer() {
         {footerLinks.map((current) => {
           return (
             <a
-              key={current.ref}
+              key={current.link}
               {...className(style.icons)}
               target="_blank"
               href={current.link}
