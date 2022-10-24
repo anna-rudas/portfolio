@@ -5,7 +5,7 @@ import * as shared from "../shared.module.css";
 
 function ProjectCard({ name, title, intro, skillTags, projectImg }) {
   return (
-    <a href={"/projects/#" + name} {...className(style.cardCon)}>
+    <a href={"/projects#" + name} {...className(style.cardCon)}>
       <div {...className(style.projectName)}>
         <div {...className(style.name)}>{name}</div>
       </div>
