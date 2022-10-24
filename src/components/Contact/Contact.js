@@ -25,7 +25,13 @@ function Contact() {
         .
       </p>
       <div {...className(style.formCon)}>
-        <form {...className(style.form, shared.frame, shared.frameLeft)}>
+        <form
+          method="post"
+          {...className(style.form, shared.frame, shared.frameLeft)}
+          name="contactForm"
+        >
+          <input type="hidden" name="form-name" value="contactForm" />
+
           <div {...className(style.senderInfo)}>
             <label {...className(style.senderInfoLabel, style.label)}>
               Name
@@ -49,7 +55,9 @@ function Contact() {
               rows="10"
             ></textarea>
           </label>
-          <button {...className(shared.btn, style.btnSubmit)}>Send</button>
+          <button type="submit" {...className(shared.btn, style.btnSubmit)}>
+            Send
+          </button>
         </form>
       </div>
     </div>

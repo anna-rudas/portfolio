@@ -1,15 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>AR</title>
-</head>
-<body>
+  </head>
+  <body>
     <div id="root"></div>
-<script type="module" src="./App.js"></script>
+    <form
+      method="post"
+      name="contactForm"
+      netlify
+      netlify-honeypot="bot-field"
+      hidden
+    >
+      <input {...className(style.input)} type="text" name="name" />
 
-</body>
+      <input {...className(style.input)} type="email" name="email" />
+
+      <input {...className(style.input)} name="subject" />
+
+      <textarea
+        {...className(style.textArea,
+        style.input)}
+        name="message"
+        cols="30"
+        rows="10"
+      ></textarea>
+    </form>
+    <script type="module" src="./App.js"></script>
+  </body>
 </html>
