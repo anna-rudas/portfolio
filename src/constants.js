@@ -33,11 +33,13 @@ export const footerLinks = [
 export const skillTags = [
   "HTML",
   "CSS",
-  "SASS",
+  "Sass",
   "JavaScript",
   "TypeScript",
   "React",
-  "Responsive Design",
+  "Git",
+  "State Management",
+  "Figma",
 ];
 
 export const myProjects = [
@@ -46,7 +48,7 @@ export const myProjects = [
     title: "memory game",
     intro:
       "A memory game with card packs of varying sizes and types. You can track your progress and how many turns it took to complete the game.",
-    skillTags: ["JavaScript", "React", "Responsive Design"],
+    skillTags: ["JavaScript", "React", "Responsive Design", "CSS animations"],
     projectImg: projectImgMemery,
   },
   {
@@ -54,14 +56,20 @@ export const myProjects = [
     title: "notes app",
     intro:
       "A note taking application, where your notes are stored in local storage. You can specify your note's colour, the theme, or switch between list and grid view.",
-    skillTags: ["TypeScript", "React", "JavaScript", "Responsive Design"],
+    skillTags: [
+      "TypeScript",
+      "React",
+      "JavaScript",
+      "Responsive Design",
+      "CSS modules",
+    ],
     projectImg: projectImgNotelux,
   },
   {
     name: "voyage",
     title: "landing page",
     intro: "A landing page for the fictional travel business Voyage.",
-    skillTags: ["JavaScript", "React", "Responsive Design"],
+    skillTags: ["JavaScript", "React", "Responsive Design", "CSS modules"],
     projectImg: projectImgVoyage,
   },
 ];
@@ -73,7 +81,7 @@ export const heroMain = {
   before: "Hello, my name is",
   main: "Anna Rudas",
   intro:
-    " I am a junior frontend developer based in Germany, who doesn't mind making mistakes because she knows she can learn from them.",
+    "I am a junior frontend developer based in Germany. I don't mind making mistakes because I know I can learn from them.",
   btnText: "Download my CV",
 };
 
@@ -91,7 +99,7 @@ export const projectDetails = [
     text: [
       "I have been an avid collector of different types of cat images and I have finally found a use for it: a memory game! I love using my developer skills to create fun games like this that I can share with my friends.",
       "The game offers three different types of card pack sizes and types for you to choose from. You can track your progress and how many turns it takes to complete the game.",
-      "The most challenging aspect of this project was the styling, specifically with the cards grid, to make sure the cards don't overflow and to maintain a responsive design. This project also made me learn more about css transformations as that is what I used to rotate the cards and create the flipping effect.",
+      "The most challenging aspect of this project was the styling, specifically with the cards grid, to make sure the cards don't overflow and to maintain a responsive design. This project also made me learn more about css transformations and animations as these are what I used to rotate the cards and create the flipping effect.",
     ],
     mobileScn: mobileScnMemery,
     desktopScn: desktopScnMemery,
@@ -109,7 +117,7 @@ export const projectDetails = [
   {
     projectName: "voyage",
     text: [
-      "With this project I wanted to concentrate on the styling and create a product that reflects my design skills. I enjoyed working on little details, for example checking to make sure the email input has the format of an email address and having a little warning if that is not the case.",
+      "With this project I wanted to concentrate on the styling and create a product that reflects my design skills. I enjoyed working on little details, for example checking to make sure the email input is valid and having a little warning if that is not the case.",
       "This project taught me about the importance of choosing the right sized image and implementing lazy loading if necessary; this was my first time working on a project with so many images and I had issues with loading time as a consequence of this.",
       "At the bottom of the page you can navigate to the credits page where you can find all the images I have used in the project.",
     ],
