@@ -57,7 +57,6 @@ function Contact() {
           name="contactForm"
         >
           <input type="hidden" name="form-name" value="contactForm" />
-
           <div {...className(style.senderInfo)}>
             <label {...className(style.senderInfoLabel, style.label)}>
               Name
