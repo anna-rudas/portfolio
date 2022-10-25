@@ -32,23 +32,26 @@ function Header({ navLinks }) {
               );
             })}
           </ul>
-          <button
+          <a
             {...className(
               shared.btn,
               shared.btnLight,
               style.btn,
               style.btnMobile
             )}
-            onClick={() => {
-              setIsMenuOpen(false);
-            }}
+            download="CV-annarudas.pdf"
+            href="/CV-annarudas.pdf"
           >
             My CV
-          </button>
+          </a>
         </nav>
-        <button {...className(shared.btn, shared.btnLight, style.btn)}>
+        <a
+          {...className(shared.btn, shared.btnLight, style.btn)}
+          download="CV-annarudas.pdf"
+          href="/CV-annarudas.pdf"
+        >
           My CV
-        </button>
+        </a>
         <button
           {...className(style.btnHamburger)}
           onClick={() => {

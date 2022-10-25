@@ -9,7 +9,7 @@ function Projects() {
   return (
     <div className="wrapper">
       <Header navLinks={navLinksProjects} />
-      <Hero {...heroProjects} btnLink="/" />
+      <Hero {...heroProjects} btnLink="/" isItMain={false} />
       {projectDetails.map((currentProject) => {
         return (
           <ProjectSection

@@ -5,7 +5,7 @@ import * as shared from "../shared.module.css";
 import { Link } from "react-router-dom";
 import ArrowIcon from "../../icons/ArrowIcon";
 
-function Hero({ before, main, intro, btnText, btnLink }) {
+function Hero({ before, main, intro, btnText, btnLink, isItMain }) {
   return (
     <div {...className(style.hero)}>
       <span {...className(shared.paragraphHero)}>{before}</span>
@@ -13,9 +13,19 @@ function Hero({ before, main, intro, btnText, btnLink }) {
       <span {...className(shared.paragraphHero, shared.sectionText)}>
         {intro}
       </span>
-      <Link to={btnLink} {...className(shared.btn, shared.btnLight)}>
-        {btnText}
-      </Link>
+      {isItMain ? (
+        <a
+          href={btnLink}
+          download="CV-annarudas.pdf"
+          {...className(shared.btn, shared.btnLight)}
+        >
+          {btnText}
+        </a>
+      ) : (
+        <Link to={btnLink} {...className(shared.btn, shared.btnLight)}>
+          {btnText}
+        </Link>
+      )}
       <div {...className(style.iconCon)}>
         <ArrowIcon {...className(style.icon)} />
       </div>
