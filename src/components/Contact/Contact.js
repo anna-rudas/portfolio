@@ -46,7 +46,7 @@ function Contact() {
           rel="noreferrer"
           href={linkedInLink}
         >
-          {"Linkedin"}
+          {"LinkedIn"}
         </a>
         .
       </p>

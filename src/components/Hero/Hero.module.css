@@ -26,7 +26,7 @@
   align-items: center;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
-  animation-duration: 1.3s;
+  animation-duration: 2.5s;
   animation-name: arrowLoop;
 }
 
@@ -45,6 +45,12 @@
   }
   100% {
     bottom: 25px;
+  }
+}
+
+@media (hover: hover) {
+  .arrowLink:hover {
+    cursor: pointer;
   }
 }
 

@@ -32,7 +32,7 @@ function About() {
           rel="noreferrer"
           href={linkedInLink}
         >
-          {"Linkedin"}
+          {"LinkedIn"}
         </a>{" "}
         or write me an{" "}
         <a {...className(shared.links)} href={emailAddress}>

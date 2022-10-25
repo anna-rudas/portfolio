@@ -11,7 +11,12 @@ function Main() {
   return (
     <div className="wrapper">
       <Header navLinks={navLinksMain} />
-      <Hero {...heroMain} btnLink="CV-annarudas.pdf" isItMain={true} />
+      <Hero
+        {...heroMain}
+        btnLink="CV-annarudas.pdf"
+        isItMain={true}
+        arrowLink="#about"
+      />
       <About />
       <MyProjects />
       <Contact />

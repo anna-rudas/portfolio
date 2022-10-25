@@ -202,6 +202,7 @@
   .section {
     padding: calc(var(--padding) * 5);
     margin: calc(var(--margin) * 2) 0;
+    padding-top: calc(var(--padding) * 10);
   }
 
   .btn {
