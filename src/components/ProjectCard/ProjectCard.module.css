@@ -125,10 +125,11 @@
 
 @media (max-width: 700px) {
   .cardCon {
-    width: 50%;
+    width: 90%;
     min-width: 265px;
+    max-width: 300px;
     flex-direction: column;
-    min-height: 650px;
+    min-height: 660px;
   }
 
   .projectName {
@@ -178,6 +179,6 @@
 
 @media (max-width: 480px) {
   .cardCon {
-    min-height: 600px;
+    min-height: 620px;
   }
 }
