@@ -124,6 +124,11 @@
   text-decoration: underline;
 }
 
+.notFound {
+  min-height: 100vh;
+  margin: 0;
+}
+
 @media (hover: hover) {
   .btn:hover {
     cursor: pointer;
