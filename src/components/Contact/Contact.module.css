@@ -79,6 +79,60 @@
   width: 50%;
   min-width: 150px;
   max-width: 230px;
+  position: relative;
+  min-height: 45px;
+}
+
+.btnInProgress {
+  pointer-events: none;
+  animation-duration: 1.4s;
+  animation-name: inProgressScale;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes inProgressScale {
+  0% {
+    transform: scale(1);
+  }
+  70% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.btnFill {
+  position: absolute;
+  inset: 0;
+  background-color: var(--text-bg);
+  width: 0;
+}
+
+.btnFillProgress {
+  animation-duration: 0.7s;
+  animation-name: inProgressFill;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.btnText {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@keyframes inProgressFill {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
 }
 
 @media (hover: hover) {

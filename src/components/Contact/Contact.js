@@ -1,10 +1,13 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { className } from "../../helpers";
 import * as style from "./Contact.module.css";
 import * as shared from "../shared.module.css";
 import { linkedInLink, emailAddress } from "../../constants";
 
 function Contact() {
+  const [isBtnPressed, setIsBtnPressed] = useState(false);
+  const [btnText, setBtnText] = useState("Send");
+
   useEffect(() => {
     const handleSubmit = (event) => {
       event.preventDefault();
@@ -19,6 +22,16 @@ function Contact() {
       })
         .then(() => console.log("Form successfully submitted"))
         .catch((error) => alert(error));
+      document.getElementById("contactForm").reset();
+      setIsBtnPressed(true);
+      setBtnText("Sending...");
+      setTimeout(() => {
+        setBtnText("Sent!");
+      }, 700);
+      setTimeout(() => {
+        setBtnText("Send");
+        setIsBtnPressed(false);
+      }, 1400);
     };
 
     const [firstForm, ...restForms] = Array.from(
@@ -55,6 +68,7 @@ function Contact() {
           method="post"
           {...className(style.form, shared.frame, shared.frameLeft)}
           name="contactForm"
+          id="contactForm"
         >
           <input type="hidden" name="form-name" value="contactForm" />
           <div {...className(style.senderInfo)}>
@@ -80,8 +94,21 @@ function Contact() {
               rows="10"
             ></textarea>
           </label>
-          <button type="submit" {...className(shared.btn, style.btnSubmit)}>
-            Send
+          <button
+            type="submit"
+            {...className(
+              shared.btn,
+              style.btnSubmit,
+              isBtnPressed && style.btnInProgress
+            )}
+          >
+            <div
+              {...className(
+                style.btnFill,
+                isBtnPressed && style.btnFillProgress
+              )}
+            ></div>
+            <div {...className(style.btnText)}>{btnText}</div>
           </button>
         </form>
       </div>
