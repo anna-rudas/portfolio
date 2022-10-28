@@ -27,28 +27,31 @@ function Hero({ before, main, intro, btnText, btnLink, isItMain, arrowLink }) {
 
   return (
     <div {...className(style.hero)}>
-      <span {...className(shared.paragraphHero)}>{before}</span>
-      <h1 {...className(shared.title, shared.titleHero)}>{main}</h1>
-      <span {...className(shared.paragraphHero, shared.sectionText)}>
-        {intro}
-      </span>
-      {isItMain ? (
-        <a
-          href={btnLink}
-          download="CV-annarudas.pdf"
-          {...className(shared.btn, shared.btnLight)}
-        >
-          {btnText}
-        </a>
-      ) : (
-        <Link to={btnLink} {...className(shared.btn, shared.btnLight)}>
-          {btnText}
-        </Link>
-      )}
-      <div {...className(style.iconCon)}>
-        <a href={arrowLink} {...className(style.arrowLink)}>
-          <ArrowIcon {...className(style.icon)} />
-        </a>
+      <div {...className(style.heroBg)}></div>
+      <div>
+        <span {...className(shared.paragraphHero)}>{before}</span>
+        <h1 {...className(shared.title, shared.titleHero)}>{main}</h1>
+        <span {...className(shared.paragraphHero, shared.sectionText)}>
+          {intro}
+        </span>
+        {isItMain ? (
+          <a
+            href={btnLink}
+            download="CV-annarudas.pdf"
+            {...className(shared.btn, shared.btnLight)}
+          >
+            {btnText}
+          </a>
+        ) : (
+          <Link to={btnLink} {...className(shared.btn, shared.btnLight)}>
+            {btnText}
+          </Link>
+        )}
+        <div {...className(style.iconCon)}>
+          <a href={arrowLink} {...className(style.arrowLink)}>
+            <ArrowIcon {...className(style.icon)} />
+          </a>
+        </div>
       </div>
     </div>
   );

@@ -61,3 +61,9 @@ br {
 svg {
   fill: currentColor;
 }
+
+.ize {
+  fill: red;
+  color: blue;
+  background-color: green;
+}
