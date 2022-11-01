@@ -9,7 +9,7 @@ function NotFound() {
       <div {...className(shared.section, shared.notFound)}>
         <h2 {...className(shared.title, shared.titlePrimary)}>oops!</h2>
         <p {...className(shared.sectionText, shared.paragraph)}>
-          Looks like that page does&apos;nt exist!
+          Looks like that page doesn&apos;t exist!
         </p>
         <Link to="/" {...className(shared.btn, shared.btnDark)}>
           Back to home page

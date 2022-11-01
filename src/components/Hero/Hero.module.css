@@ -29,7 +29,7 @@
     )
     1;
   background-size: 400% 400%;
-  animation: gradientDark 20s ease infinite;
+  animation: gradientHero 20s ease infinite;
   animation-timing-function: ease-in-out;
   height: 100%;
   width: 100%;
@@ -42,7 +42,7 @@
   z-index: 3;
 }
 
-@keyframes gradientDark {
+@keyframes gradientHero {
   0% {
     background-position: 0% 100%;
   }

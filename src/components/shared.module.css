@@ -69,6 +69,7 @@
   padding: var(--padding) calc(var(--padding) * 2);
   background-color: var(--text-bg);
   box-shadow: 5px 5px 0px var(--primary-dark);
+  transition: all 0.3s ease-in-out;
 }
 
 .tagsCon {
@@ -166,6 +167,13 @@
   .links:focus-visible {
     text-decoration-line: underline;
     text-decoration-style: double;
+  }
+
+  .skillTags:hover {
+    cursor: default;
+    color: var(--text-bg);
+    background-color: var(--primary-dark);
+    box-shadow: none;
   }
 }
 
