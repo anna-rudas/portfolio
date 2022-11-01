@@ -129,7 +129,7 @@
     min-width: 265px;
     max-width: 300px;
     flex-direction: column;
-    min-height: 660px;
+    min-height: 600px;
   }
 
   .projectName {

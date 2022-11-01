@@ -13,8 +13,8 @@ function About() {
         I have recently completed my Bachelor of Science, majoring in Electrical
         Engineering. While in university not only did I study natural science,
         but also gained an understanding of the principles of OOP, as well as
-        had numerous classes focused on learning programming languages like C++,
-        SQL, Matlab.
+        had numerous classes focused on learning programming languages like C,
+        C++, SQL and Matlab.
         <br /> All of this helped me discover my passion for software
         development and gave me a foundation of knowledge that I could build on
         to create websites like the ones you can see in the{" "}
@@ -23,9 +23,9 @@ function About() {
         </a>{" "}
         section. Check them out!
         <br />
-        <br /> I&apos;m open to Job opportunities where I can learn and
-        contribute. If you have a good opportunity that matches my skills and
-        experience then don&apos;t hesitate to contact me on{" "}
+        I&apos;m open to Job opportunities where I can learn and contribute. If
+        you have a good opportunity that matches my skills and experience then
+        don&apos;t hesitate to contact me on{" "}
         <a
           {...className(shared.links)}
           target="_blank"

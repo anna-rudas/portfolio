@@ -55,14 +55,8 @@ export const myProjects = [
     name: "notelux",
     title: "notes app",
     intro:
-      "A note taking application, where your notes are stored in local storage. You can specify your note's colour, the theme, or switch between list and grid view.",
-    skillTags: [
-      "TypeScript",
-      "React",
-      "JavaScript",
-      "Responsive Design",
-      "CSS modules",
-    ],
+      "A note-taking application with extensive features and responsive UI.",
+    skillTags: ["TypeScript", "React", "JavaScript", "CSS modules"],
     projectImg: projectImgNotelux,
   },
   {
@@ -80,8 +74,7 @@ export const navLinksProjects = ["memery", "notelux", "voyage"];
 export const heroMain = {
   before: "Hello, my name is",
   main: "Anna Rudas",
-  intro:
-    "I am a junior frontend developer based in Germany. I don't mind making mistakes because I know I can learn from them.",
+  intro: "I am a junior frontend developer based in Germany.",
   btnText: "Download my CV",
 };
 
@@ -89,7 +82,7 @@ export const heroProjects = {
   before: "",
   main: "My Projects",
   intro:
-    "On this page you can read about my projects in more detail. To see what I'm currently working on, take a look around on my github.",
+    "I've spent the last year teaching myself to code, using the foundation that my university education gave me. To see what I'm currently working on, take a look around on my Github.",
   btnText: "Back to home page",
 };
 
