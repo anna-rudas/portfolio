@@ -29,7 +29,7 @@
     )
     1;
   background-size: 400% 400%;
-  animation: gradientHero 20s ease infinite;
+  animation: gradientHero 10s ease infinite;
   animation-timing-function: ease-in-out;
   height: 100%;
   width: 100%;
