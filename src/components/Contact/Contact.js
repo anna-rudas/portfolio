@@ -74,16 +74,33 @@ function Contact() {
           <div {...className(style.senderInfo)}>
             <label {...className(style.senderInfoLabel, style.label)}>
               Name
-              <input {...className(style.input)} type="text" name="name" />
+              <input
+                {...className(style.input)}
+                type="text"
+                name="name"
+                required
+                maxLength={50}
+              />
             </label>
             <label {...className(style.senderInfoLabel, style.label)}>
               Email
-              <input {...className(style.input)} type="email" name="email" />
+              <input
+                {...className(style.input)}
+                type="email"
+                name="email"
+                required
+                maxLength={50}
+              />
             </label>
           </div>
           <label {...className(style.textLabel, style.label)}>
             Subject
-            <input {...className(style.input)} name="subject"></input>
+            <input
+              {...className(style.input)}
+              name="subject"
+              required
+              maxLength={100}
+            ></input>
           </label>
           <label {...className(style.textLabel, style.label)}>
             Message
@@ -92,6 +109,8 @@ function Contact() {
               name="message"
               cols="30"
               rows="10"
+              maxLength={1000}
+              required
             ></textarea>
           </label>
           <button
