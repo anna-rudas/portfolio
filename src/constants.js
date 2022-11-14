@@ -74,7 +74,7 @@ export const navLinksProjects = ["memery", "notelux", "voyage"];
 export const heroMain = {
   before: "Hello, my name is",
   main: "Anna Rudas",
-  intro: "I am a junior frontend developer based in Germany.",
+  intro: "I am a frontend developer based in Germany.",
   btnText: "Download my CV",
 };
 
