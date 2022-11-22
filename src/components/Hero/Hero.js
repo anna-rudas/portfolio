@@ -43,7 +43,13 @@ function Hero({ before, main, intro, btnText, btnLink, isItMain, arrowLink }) {
             {btnText}
           </a>
         ) : (
-          <Link to={btnLink} {...className(shared.btn, shared.btnLight)}>
+          <Link
+            to={btnLink}
+            {...className(shared.btn, shared.btnLight)}
+            onClick={() => {
+              window.scrollTo(0, 0);
+            }}
+          >
             {btnText}
           </Link>
         )}

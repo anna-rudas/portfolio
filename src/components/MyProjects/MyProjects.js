@@ -23,7 +23,13 @@ function MyProjects() {
         </a>{" "}
         to see what I&apos;m currently working on.
       </p>
-      <Link to="/projects" {...className(shared.btn, shared.btnDark)}>
+      <Link
+        to="/projects"
+        {...className(shared.btn, shared.btnDark)}
+        onClick={() => {
+          window.scrollTo(0, 0);
+        }}
+      >
         More about my projects
       </Link>
       <div {...className(style.cardsCon)}>

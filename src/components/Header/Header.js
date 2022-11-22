@@ -8,14 +8,16 @@ import { Link } from "react-router-dom";
 function Header({ navLinks }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const handleClick = () => {
-    window.scrollTo(0, 0);
-  };
-
   return (
     <div {...className(style.header)}>
       <div {...className(style.navList)}>
-        <Link to="/" {...className(style.initials)} onClick={handleClick}>
+        <Link
+          to="/"
+          {...className(style.initials)}
+          onClick={() => {
+            window.scrollTo(0, 0);
+          }}
+        >
           AR
         </Link>
         <nav {...className(style.nav, isMenuOpen && style.mobileMenu)}>
