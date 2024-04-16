@@ -10,7 +10,7 @@ function About() {
     <div {...className(shared.section)} id="about">
       <h2 {...className(shared.title, shared.titlePrimary)}>About me</h2>
       <p {...className(shared.sectionText, shared.paragraph)}>
-        I have recently completed my Bachelor of Science, majoring in Electrical
+        In 2022 I have completed my Bachelor of Science, majoring in Electrical
         Engineering. While in university not only did I study natural science,
         but also gained an understanding of the principles of OOP, as well as
         had numerous classes focused on learning programming languages like C,
@@ -23,7 +23,7 @@ function About() {
         </a>{" "}
         section. Check them out!
         <br />
-        I&apos;m open to Job opportunities where I can learn and contribute. If
+        I&apos;m open to job opportunities where I can learn and contribute. If
         you have a good opportunity that matches my skills and experience then
         don&apos;t hesitate to contact me on{" "}
         <a

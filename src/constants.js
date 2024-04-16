@@ -1,18 +1,18 @@
-import projectImgVoyage from "./images/project-cards/voyage.png";
+import projectImgMortle from "./images/project-cards/mortle.png";
 import projectImgMemery from "./images/project-cards/memery.png";
 import projectImgNotelux from "./images/project-cards/notelux.png";
 import desktopScnMemery from "./images/projects/memery-desktop.png";
 import mobileScnMemery from "./images/projects/memery-mobile.png";
 import desktopScnNotelux from "./images/projects/notelux-desktop.png";
 import mobileScnNotelux from "./images/projects/notelux-mobile.png";
-import desktopScnVoyage from "./images/projects/voyage-desktop.png";
-import mobileScnVoyage from "./images/projects/voyage-mobile.png";
+import desktopScnMortle from "./images/projects/mortle-desktop.png";
+import mobileScnMortle from "./images/projects/mortle-mobile.png";
 import LinkedInIcon from "./icons/LinkedInIcon";
 import EnvelopeIcon from "./icons/EnvelopeIcon";
 import GithubIcon from "./icons/GithubIcon";
 
 export const githubLink = "https://github.com/anna-rudas";
-export const emailAddress = "mailto:anna.rudas@protonmail.com";
+export const emailAddress = "mailto:mail@annarudas.com";
 export const linkedInLink = "https://www.linkedin.com/in/annarudas/";
 
 export const footerLinks = [
@@ -38,9 +38,16 @@ export const skillTags = [
   "TypeScript",
   "React",
   "Git",
-  "State Management",
+  "VueJs",
   "Figma",
+  "Responsive Design",
 ];
+
+const ProjectLinks = {
+  memery: "https://memery.annarudas.com/",
+  mortle: "https://mortle.annarudas.com/",
+  notelux: "https://notelux.annarudas.com/",
+};
 
 export const myProjects = [
   {
@@ -50,6 +57,16 @@ export const myProjects = [
       "A memory game with card packs of varying sizes and types. You can track your progress and how many turns it took to complete the game.",
     skillTags: ["JavaScript", "React", "Responsive Design", "CSS animations"],
     projectImg: projectImgMemery,
+    link: ProjectLinks.memery,
+  },
+  {
+    name: "mortle",
+    title: "wordle game",
+    intro:
+      "The classic wordle game with added dictionary definitions and saved statistics data.",
+    skillTags: ["Typescript", "React", "Responsive Design", "Sass"],
+    projectImg: projectImgMortle,
+    link: ProjectLinks.mortle,
   },
   {
     name: "notelux",
@@ -58,23 +75,17 @@ export const myProjects = [
       "A note-taking application with extensive features and responsive UI.",
     skillTags: ["TypeScript", "React", "JavaScript", "CSS modules"],
     projectImg: projectImgNotelux,
-  },
-  {
-    name: "voyage",
-    title: "landing page",
-    intro: "A landing page for the fictional travel business Voyage.",
-    skillTags: ["JavaScript", "React", "Responsive Design", "CSS modules"],
-    projectImg: projectImgVoyage,
+    link: ProjectLinks.notelux,
   },
 ];
 
 export const navLinksMain = ["about", "projects", "contact"];
-export const navLinksProjects = ["memery", "notelux", "voyage"];
+export const navLinksProjects = ["memery", "mortle", "notelux"];
 
 export const heroMain = {
   before: "Hello, my name is",
   main: "Anna Rudas",
-  intro: "I am a frontend developer based in Germany.",
+  intro: "I am a software developer based in Germany.",
   btnText: "Download my CV",
 };
 
@@ -82,7 +93,7 @@ export const heroProjects = {
   before: "",
   main: "My Projects",
   intro:
-    "I've spent the last year teaching myself to code, using the foundation that my university education gave me. To see what I'm currently working on, take a look around on my Github.",
+    "To see what I'm currently working on, take a look around on my Github.",
   btnText: "Back to home page",
 };
 
@@ -97,7 +108,19 @@ export const projectDetails = [
     mobileScn: mobileScnMemery,
     desktopScn: desktopScnMemery,
     github: "https://github.com/anna-rudas/memery",
-    website: "https://a-simple-memery-game.netlify.app/",
+    website: ProjectLinks.memery,
+  },
+  {
+    projectName: "mortle",
+    text: [
+      "I absolutely love word games, and the classic Wordle is one of my favourites! One thing I was always missing from it though is definitions for the solutions, because sometimes I have no idea what they mean. So, I added them! I have also not set a word limit per day, so it's a perfect game to pass the time while also working my brain.",
+      "Besides the main gameplay, there is also the functionality to see your statistics, with information about your win percentage and guess distribution.",
+      "My main struggle was to work out the logic of the game and it took me awhile to get that right. What I love the most about this project is the design: it's unique and fun and it gave me a lot of joy to create it.",
+    ],
+    mobileScn: mobileScnMortle,
+    desktopScn: desktopScnMortle,
+    github: "https://github.com/anna-rudas/wordle",
+    website: ProjectLinks.mortle,
   },
   {
     projectName: "notelux",
@@ -109,18 +132,6 @@ export const projectDetails = [
     mobileScn: mobileScnNotelux,
     desktopScn: desktopScnNotelux,
     github: "https://github.com/anna-rudas/notelux",
-    website: "https://notelux.netlify.app/",
-  },
-  {
-    projectName: "voyage",
-    text: [
-      "With this project I wanted to concentrate on the styling and create a product that reflects my design skills. I enjoyed working on little details, for example checking to make sure the email input is valid and having a little warning if that is not the case.",
-      "This project taught me about the importance of choosing the right sized image and implementing lazy loading if necessary; this was my first time working on a project with so many images and I had issues with loading time as a consequence of this.",
-      "At the bottom of the page you can navigate to the credits page where you can find all the images I have used in the project.",
-    ],
-    mobileScn: mobileScnVoyage,
-    desktopScn: desktopScnVoyage,
-    github: "https://github.com/anna-rudas/voyage-landing-page",
-    website: "https://voyage-landing-page.netlify.app/",
+    website: ProjectLinks.notelux,
   },
 ];

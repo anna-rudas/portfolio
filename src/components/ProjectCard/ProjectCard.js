@@ -2,11 +2,15 @@ import React from "react";
 import { className } from "../../helpers";
 import * as style from "./ProjectCard.module.css";
 import * as shared from "../shared.module.css";
-import { HashLink } from "react-router-hash-link";
 
-function ProjectCard({ name, title, intro, skillTags, projectImg }) {
+function ProjectCard({ name, title, intro, skillTags, projectImg, link }) {
   return (
-    <HashLink to={"/projects#" + name} {...className(style.cardCon)}>
+    <a
+      href={link}
+      target="_blank"
+      rel="noreferrer"
+      {...className(style.cardCon)}
+    >
       <div {...className(style.projectName)}>
         <div {...className(style.name)}>{name}</div>
       </div>
@@ -32,9 +36,9 @@ function ProjectCard({ name, title, intro, skillTags, projectImg }) {
         ></div>
       </div>
       <div {...className(style.btnCon)}>
-        <div {...className(shared.btn, style.btn)}>Go to project</div>
+        <div {...className(shared.btn, style.btn)}>Go to website</div>
       </div>
-    </HashLink>
+    </a>
   );
 }
 
