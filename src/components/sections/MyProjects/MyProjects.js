@@ -5,6 +5,7 @@ import * as shared from "../../../assets/styles/shared.module.css";
 import ProjectCard from "../../templates/ProjectCard";
 import { myProjects, githubLink } from "../../../data/constants";
 import PrimaryButton from "../../buttons/PrimaryButton/PrimaryButton";
+import SecondaryLink from "../../buttons/SecondaryLink/SecondaryLink";
 
 function MyProjects() {
   return (
@@ -13,15 +14,8 @@ function MyProjects() {
       <p {...className(shared.sectionText, shared.paragraph)}>
         Here are some of the projects I have developed. You can find out more
         about them by clicking the link below, or check out my{" "}
-        <a
-          {...className(shared.links)}
-          target="_blank"
-          rel="noreferrer"
-          href={githubLink}
-        >
-          {"Github"}
-        </a>{" "}
-        to see what I&apos;m currently working on.
+        <SecondaryLink to={githubLink}>Github</SecondaryLink> to see what
+        I&apos;m currently working on.
       </p>
 
       <PrimaryButton

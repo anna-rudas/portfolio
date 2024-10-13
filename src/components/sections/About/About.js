@@ -4,6 +4,7 @@ import * as style from "./About.module.css";
 import * as shared from "../../../assets/styles/shared.module.css";
 import { skillTags, linkedInLink, emailAddress } from "../../../data/constants";
 import aboutImg from "../../../assets/images/about-me.jpg";
+import SecondaryLink from "../../buttons/SecondaryLink/SecondaryLink";
 
 function About() {
   return (
@@ -18,27 +19,14 @@ function About() {
         <br /> All of this helped me discover my passion for software
         development and gave me a foundation of knowledge that I could build on
         to create websites like the ones you can see in the{" "}
-        <a href="#projects" {...className(shared.links)}>
-          {"Projects"}
-        </a>{" "}
-        section. Check them out!
+        <SecondaryLink to="#projects">Projects</SecondaryLink> section. Check
+        them out!
         <br />
         I&apos;m open to job opportunities where I can learn and contribute. If
         you have a good opportunity that matches my skills and experience then
         don&apos;t hesitate to contact me on{" "}
-        <a
-          {...className(shared.links)}
-          target="_blank"
-          rel="noreferrer"
-          href={linkedInLink}
-        >
-          {"LinkedIn"}
-        </a>{" "}
-        or write me an{" "}
-        <a {...className(shared.links)} href={emailAddress}>
-          {"email"}
-        </a>
-        .
+        <SecondaryLink to={linkedInLink}>LinkedIn</SecondaryLink> or write me an{" "}
+        <SecondaryLink to={emailAddress}>email</SecondaryLink>.
       </p>
       <div {...className(style.skills)}>
         <div {...className(style.imgCon)}>
@@ -55,7 +43,7 @@ function About() {
             </h3>
             <p {...className(shared.paragraph)}>
               I am constantly working to add to my list of skills, as I am the
-              happiest when creating, exploring or learning something new.{" "}
+              happiest when creating, exploring or learning something new.
               <br />
               I&apos;m not afraid of challenging myself; progress comes from
               failing and learning from your mistakes.

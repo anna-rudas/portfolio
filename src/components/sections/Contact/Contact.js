@@ -4,6 +4,7 @@ import * as style from "./Contact.module.css";
 import * as shared from "../../../assets/styles/shared.module.css";
 import { linkedInLink, emailAddress } from "../../../data/constants";
 import PrimaryButton from "../../buttons/PrimaryButton/PrimaryButton";
+import SecondaryLink from "../../buttons/SecondaryLink/SecondaryLink";
 
 function Contact() {
   const [isBtnPressed, setIsBtnPressed] = useState(false);
@@ -50,19 +51,8 @@ function Contact() {
       <h2 {...className(shared.title, shared.titlePrimary)}>Contact</h2>
       <p {...className(shared.sectionText, shared.paragraph)}>
         Write to me here or send me an{" "}
-        <a {...className(shared.links)} href={emailAddress}>
-          {"email"}
-        </a>
-        . You can also contact me on{" "}
-        <a
-          {...className(shared.links)}
-          target="_blank"
-          rel="noreferrer"
-          href={linkedInLink}
-        >
-          {"LinkedIn"}
-        </a>
-        .
+        <SecondaryLink to={emailAddress}>email</SecondaryLink>. You can also
+        contact me on <SecondaryLink to={linkedInLink}>LinkedIn</SecondaryLink>.
       </p>
       <div {...className(style.formCon)}>
         <form
