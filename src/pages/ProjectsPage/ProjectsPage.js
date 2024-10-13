@@ -9,7 +9,7 @@ import {
   projectDetails,
 } from "../../data/constants";
 
-function Projects() {
+function ProjectsPage() {
   return (
     <div className="wrapper">
       <Header navLinks={navLinksProjects} />
@@ -32,4 +32,4 @@ function Projects() {
   );
 }
 
-export default Projects;
+export default ProjectsPage;
