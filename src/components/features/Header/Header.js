@@ -4,6 +4,7 @@ import * as style from "./Header.module.css";
 import HamburgerIcon from "../../../assets/icons/HamburgerIcon";
 import { Link } from "react-router-dom";
 import PrimaryButton from "../../buttons/PrimaryButton/PrimaryButton";
+import PrimaryLink from "../../buttons/PrimaryLink/PrimaryLink";
 
 function Header({ navLinks }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -25,15 +26,14 @@ function Header({ navLinks }) {
             {navLinks.map((current) => {
               return (
                 <li key={current}>
-                  <a
-                    {...className(style.link)}
-                    href={`#${current}`}
-                    onClick={() => {
+                  <PrimaryLink
+                    to={`#${current}`}
+                    onLinkClick={() => {
                       setIsMenuOpen(false);
                     }}
                   >
                     {current}
-                  </a>
+                  </PrimaryLink>
                 </li>
               );
             })}

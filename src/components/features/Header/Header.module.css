@@ -40,12 +40,6 @@
   gap: calc(var(--gap) * 5);
 }
 
-.link {
-  color: var(--primary-light);
-  text-transform: uppercase;
-  transition: all 0.3s ease-in-out;
-}
-
 .button {
   margin: 0 !important;
   font-size: 1.1rem !important;
@@ -64,10 +58,6 @@
 }
 
 @media (hover: hover) {
-  .link:hover {
-    font-style: italic;
-  }
-
   .link:focus-visible {
     font-style: italic;
   }
