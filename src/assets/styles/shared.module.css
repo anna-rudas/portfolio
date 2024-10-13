@@ -94,28 +94,12 @@
   box-shadow: 10px 10px 0px var(--primary-dark);
 }
 
-.links {
-  color: var(--primary-dark);
-  transition: all 0.3s ease-in-out;
-  text-decoration: underline;
-}
-
 .notFound {
   min-height: 100vh;
   margin: 0;
 }
 
 @media (hover: hover) {
-  .links:hover {
-    text-decoration-line: underline;
-    text-decoration-style: double;
-  }
-
-  .links:focus-visible {
-    text-decoration-line: underline;
-    text-decoration-style: double;
-  }
-
   .skillTags:hover {
     cursor: default;
     color: var(--text-bg);
