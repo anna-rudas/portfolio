@@ -1,9 +1,9 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Main from "./Main";
-import Projects from "./Projects";
-import NotFound from "./NotFound";
+import Main from "./pages/Main";
+import Projects from "./pages/Projects";
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (

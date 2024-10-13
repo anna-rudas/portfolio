@@ -1,6 +1,6 @@
 import React from "react";
-import { className } from "./helpers";
-import * as shared from "./components/shared.module.css";
+import { className } from "../utilities/helpers";
+import * as shared from "../assets/styles/shared.module.css";
 import { Link } from "react-router-dom";
 
 function NotFound() {

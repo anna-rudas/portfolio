@@ -1,11 +1,11 @@
 import React from "react";
-import About from "./components/About";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
-import Hero from "./components/Hero";
-import MyProjects from "./components/MyProjects";
-import { heroMain, navLinksMain } from "./constants";
+import About from "../components/About";
+import Contact from "../components/Contact";
+import Footer from "../components/Footer";
+import Header from "../components/Header";
+import Hero from "../components/Hero";
+import MyProjects from "../components/MyProjects";
+import { heroMain, navLinksMain } from "../data/constants";
 
 function Main() {
   return (

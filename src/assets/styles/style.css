@@ -33,7 +33,7 @@ body,
 }
 
 .wrapper {
-  background-image: url("./images//background.svg");
+  background-image: url("../images/background.svg");
   background-repeat: repeat;
   background-color: var(--primary-light);
   font-family: var(--font-secondary);

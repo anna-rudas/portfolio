@@ -1,7 +1,7 @@
 import React from "react";
-import { className } from "../../helpers";
+import { className } from "../../utilities/helpers";
 import * as style from "./Footer.module.css";
-import { footerLinks } from "../../constants";
+import { footerLinks } from "../../data/constants";
 
 function Footer() {
   return (

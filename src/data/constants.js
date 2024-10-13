@@ -1,15 +1,15 @@
-import projectImgMortle from "./images/project-cards/mortle.png";
-import projectImgMemery from "./images/project-cards/memery.png";
-import projectImgNotelux from "./images/project-cards/notelux.png";
-import desktopScnMemery from "./images/projects/memery-desktop.png";
-import mobileScnMemery from "./images/projects/memery-mobile.png";
-import desktopScnNotelux from "./images/projects/notelux-desktop.png";
-import mobileScnNotelux from "./images/projects/notelux-mobile.png";
-import desktopScnMortle from "./images/projects/mortle-desktop.png";
-import mobileScnMortle from "./images/projects/mortle-mobile.png";
-import LinkedInIcon from "./icons/LinkedInIcon";
-import EnvelopeIcon from "./icons/EnvelopeIcon";
-import GithubIcon from "./icons/GithubIcon";
+import projectImgMortle from "../assets/images/project-cards/mortle.png";
+import projectImgMemery from "../assets/images/project-cards/memery.png";
+import projectImgNotelux from "../assets/images/project-cards/notelux.png";
+import desktopScnMemery from "../assets/images/projects/memery-desktop.png";
+import mobileScnMemery from "../assets/images/projects/memery-mobile.png";
+import desktopScnNotelux from "../assets/images/projects/notelux-desktop.png";
+import mobileScnNotelux from "../assets/images/projects/notelux-mobile.png";
+import desktopScnMortle from "../assets/images/projects/mortle-desktop.png";
+import mobileScnMortle from "../assets/images/projects/mortle-mobile.png";
+import LinkedInIcon from "../assets/icons/LinkedInIcon";
+import EnvelopeIcon from "../assets/icons/EnvelopeIcon";
+import GithubIcon from "../assets/icons/GithubIcon";
 
 export const githubLink = "https://github.com/anna-rudas";
 export const emailAddress = "mailto:mail@annarudas.com";

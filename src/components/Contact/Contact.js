@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { className } from "../../helpers";
+import { className } from "../../utilities/helpers";
 import * as style from "./Contact.module.css";
-import * as shared from "../shared.module.css";
-import { linkedInLink, emailAddress } from "../../constants";
+import * as shared from "../../assets/styles/shared.module.css";
+import { linkedInLink, emailAddress } from "../../data/constants";
 
 function Contact() {
   const [isBtnPressed, setIsBtnPressed] = useState(false);
