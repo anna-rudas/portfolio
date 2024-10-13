@@ -1,13 +1,13 @@
 import React from "react";
-import Header from "../components/Header";
-import Hero from "../components/Hero";
-import ProjectSection from "../components/ProjectSection";
-import Footer from "../components/Footer";
+import Header from "../../components/features/Header";
+import Hero from "../../components/sections/Hero";
+import ProjectSection from "../../components/templates/ProjectSection";
+import Footer from "../../components/features/Footer";
 import {
   heroProjects,
   navLinksProjects,
   projectDetails,
-} from "../data/constants";
+} from "../../data/constants";
 
 function Projects() {
   return (

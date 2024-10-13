@@ -1,9 +1,9 @@
 import React from "react";
-import { className } from "../../utilities/helpers";
+import { className } from "../../../utilities/helpers";
 import * as style from "./About.module.css";
-import * as shared from "../../assets/styles/shared.module.css";
-import { skillTags, linkedInLink, emailAddress } from "../../data/constants";
-import aboutImg from "../../assets/images/about-me.jpg";
+import * as shared from "../../../assets/styles/shared.module.css";
+import { skillTags, linkedInLink, emailAddress } from "../../../data/constants";
+import aboutImg from "../../../assets/images/about-me.jpg";
 
 function About() {
   return (

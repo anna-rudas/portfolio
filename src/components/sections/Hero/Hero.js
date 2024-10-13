@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
-import { className } from "../../utilities/helpers";
+import { className } from "../../../utilities/helpers";
 import * as style from "./Hero.module.css";
-import * as shared from "../../assets/styles/shared.module.css";
+import * as shared from "../../../assets/styles/shared.module.css";
 import { Link } from "react-router-dom";
-import ArrowIcon from "../../assets/icons/ArrowIcon";
+import ArrowIcon from "../../../assets/icons/ArrowIcon";
 
 const convertStyle = () => {
   let height = window.innerHeight;

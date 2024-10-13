@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { className } from "../../utilities/helpers";
+import { className } from "../../../utilities/helpers";
 import * as style from "./Header.module.css";
-import * as shared from "../../assets/styles/shared.module.css";
-import HamburgerIcon from "../../assets/icons/HamburgerIcon";
+import * as shared from "../../../assets/styles/shared.module.css";
+import HamburgerIcon from "../../../assets/icons/HamburgerIcon";
 import { Link } from "react-router-dom";
 
 function Header({ navLinks }) {

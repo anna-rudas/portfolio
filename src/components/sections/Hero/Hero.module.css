@@ -33,7 +33,7 @@
   animation-timing-function: ease-in-out;
   height: 100%;
   width: 100%;
-  mask-image: url("../../assets/images/background.svg");
+  mask-image: url("../../../assets/images/background.svg");
   position: absolute;
   inset: 0;
 }

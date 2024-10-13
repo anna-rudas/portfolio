@@ -1,9 +1,9 @@
 import React from "react";
-import { className } from "../../utilities/helpers";
+import { className } from "../../../utilities/helpers";
 import * as style from "./MyProjects.module.css";
-import * as shared from "../../assets/styles/shared.module.css";
-import ProjectCard from "../ProjectCard";
-import { myProjects, githubLink } from "../../data/constants";
+import * as shared from "../../../assets/styles/shared.module.css";
+import ProjectCard from "../../templates/ProjectCard";
+import { myProjects, githubLink } from "../../../data/constants";
 import { Link } from "react-router-dom";
 
 function MyProjects() {
