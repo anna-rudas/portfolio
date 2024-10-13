@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { className } from "../../../utilities/helpers";
 import * as style from "./Header.module.css";
-import * as shared from "../../../assets/styles/shared.module.css";
 import HamburgerIcon from "../../../assets/icons/HamburgerIcon";
 import { Link } from "react-router-dom";
+import PrimaryButton from "../../buttons/PrimaryButton/PrimaryButton";
 
 function Header({ navLinks }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -38,26 +38,24 @@ function Header({ navLinks }) {
               );
             })}
           </ul>
-          <a
-            {...className(
-              shared.btn,
-              shared.btnLight,
-              style.btn,
-              style.btnMobile
-            )}
-            download="CV-annarudas.pdf"
-            href="/CV-annarudas.pdf"
+          <PrimaryButton
+            extraButtonStyle={`${style.button} ${style.buttonMobile}`}
+            buttonLinkInternal="/CV-annarudas.pdf"
+            isButtonToDownload={true}
+            isDarkButtonStyle={false}
           >
             My CV
-          </a>
+          </PrimaryButton>
         </nav>
-        <a
-          {...className(shared.btn, shared.btnLight, style.btn)}
-          download="CV-annarudas.pdf"
-          href="/CV-annarudas.pdf"
+
+        <PrimaryButton
+          extraButtonStyle={style.button}
+          buttonLinkInternal="/CV-annarudas.pdf"
+          isButtonToDownload={true}
+          isDarkButtonStyle={false}
         >
           My CV
-        </a>
+        </PrimaryButton>
         <button
           {...className(style.btnHamburger)}
           onClick={() => {

@@ -1,7 +1,7 @@
 import React from "react";
 import { className } from "../../utilities/helpers";
 import * as shared from "../../assets/styles/shared.module.css";
-import { Link } from "react-router-dom";
+import PrimaryButton from "../../components/buttons/PrimaryButton/PrimaryButton";
 
 function NotFound() {
   return (
@@ -11,9 +11,9 @@ function NotFound() {
         <p {...className(shared.sectionText, shared.paragraph)}>
           Looks like that page doesn&apos;t exist!
         </p>
-        <Link to="/" {...className(shared.btn, shared.btnDark)}>
+        <PrimaryButton buttonLinkInternal={"/"}>
           Back to home page
-        </Link>
+        </PrimaryButton>
       </div>
     </div>
   );

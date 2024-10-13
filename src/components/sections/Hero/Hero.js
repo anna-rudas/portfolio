@@ -2,8 +2,8 @@ import React, { useEffect } from "react";
 import { className } from "../../../utilities/helpers";
 import * as style from "./Hero.module.css";
 import * as shared from "../../../assets/styles/shared.module.css";
-import { Link } from "react-router-dom";
 import ArrowIcon from "../../../assets/icons/ArrowIcon";
+import PrimaryButton from "../../buttons/PrimaryButton/PrimaryButton";
 
 const convertStyle = () => {
   let height = window.innerHeight;
@@ -35,23 +35,23 @@ function Hero({ before, main, intro, btnText, btnLink, isItMain, arrowLink }) {
           {intro}
         </span>
         {isItMain ? (
-          <a
-            href={btnLink}
-            download="CV-annarudas.pdf"
-            {...className(shared.btn, shared.btnLight)}
+          <PrimaryButton
+            buttonLinkInternal={btnLink}
+            isDarkButtonStyle={false}
+            isButtonToDownload={true}
           >
             {btnText}
-          </a>
+          </PrimaryButton>
         ) : (
-          <Link
-            to={btnLink}
-            {...className(shared.btn, shared.btnLight)}
-            onClick={() => {
+          <PrimaryButton
+            buttonLinkInternal={btnLink}
+            isDarkButtonStyle={false}
+            onButtonClick={() => {
               window.scrollTo(0, 0);
             }}
           >
             {btnText}
-          </Link>
+          </PrimaryButton>
         )}
         <div {...className(style.iconCon)}>
           <a href={arrowLink} {...className(style.arrowLink)}>

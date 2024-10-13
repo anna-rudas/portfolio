@@ -3,6 +3,7 @@ import { className } from "../../../utilities/helpers";
 import * as style from "./Contact.module.css";
 import * as shared from "../../../assets/styles/shared.module.css";
 import { linkedInLink, emailAddress } from "../../../data/constants";
+import PrimaryButton from "../../buttons/PrimaryButton/PrimaryButton";
 
 function Contact() {
   const [isBtnPressed, setIsBtnPressed] = useState(false);
@@ -113,13 +114,11 @@ function Contact() {
               required
             ></textarea>
           </label>
-          <button
-            type="submit"
-            {...className(
-              shared.btn,
-              style.btnSubmit,
+          <PrimaryButton
+            isDarkButtonStyle={false}
+            extraButtonStyle={`${style.btnSubmit} ${
               isBtnPressed && style.btnInProgress
-            )}
+            }`}
           >
             <div
               {...className(
@@ -128,7 +127,7 @@ function Contact() {
               )}
             ></div>
             <div {...className(style.btnText)}>{btnText}</div>
-          </button>
+          </PrimaryButton>
         </form>
       </div>
     </div>

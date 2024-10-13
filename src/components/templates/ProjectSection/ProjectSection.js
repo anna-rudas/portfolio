@@ -2,6 +2,7 @@ import React from "react";
 import { className } from "../../../utilities/helpers";
 import * as style from "./ProjectSection.module.css";
 import * as shared from "../../../assets/styles/shared.module.css";
+import PrimaryButton from "../../buttons/PrimaryButton/PrimaryButton";
 
 function ProjectSection({
   projectName,
@@ -27,22 +28,19 @@ function ProjectSection({
             })}
           </p>
           <div {...className(style.btnsCon)}>
-            <a
-              href={github}
-              target="_blank"
-              rel="noreferrer"
-              {...className(shared.btn, shared.btnDark, style.btn)}
+            <PrimaryButton
+              extraButtonStyle={style.button}
+              buttonLinkExternal={github}
             >
               Github
-            </a>
-            <a
-              href={website}
-              target="_blank"
-              rel="noreferrer"
-              {...className(shared.btn, shared.btnDark, style.btn)}
+            </PrimaryButton>
+
+            <PrimaryButton
+              extraButtonStyle={style.button}
+              buttonLinkExternal={website}
             >
               Website
-            </a>
+            </PrimaryButton>
           </div>
         </div>
         <div {...className(style.mobileScnCon)}>

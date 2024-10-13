@@ -46,9 +46,9 @@
   transition: all 0.3s ease-in-out;
 }
 
-.btn {
-  margin: 0;
-  font-size: 1.1rem;
+.button {
+  margin: 0 !important;
+  font-size: 1.1rem !important;
 }
 
 .btnHamburger {
@@ -59,8 +59,8 @@
   display: none;
 }
 
-.btnMobile {
-  display: none;
+.buttonMobile {
+  display: none !important;
 }
 
 @media (hover: hover) {
@@ -97,12 +97,12 @@
     display: none;
   }
 
-  .btn {
-    display: none;
+  .button {
+    display: none !important;
   }
 
-  .btnMobile {
-    display: block;
+  .buttonMobile {
+    display: block !important;
   }
 
   .linksCon {

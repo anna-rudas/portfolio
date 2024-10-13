@@ -2,6 +2,7 @@ import React from "react";
 import { className } from "../../../utilities/helpers";
 import * as style from "./ProjectCard.module.css";
 import * as shared from "../../../assets/styles/shared.module.css";
+import PrimaryButton from "../../buttons/PrimaryButton/PrimaryButton";
 
 function ProjectCard({ name, title, intro, skillTags, projectImg, link }) {
   return (
@@ -36,7 +37,9 @@ function ProjectCard({ name, title, intro, skillTags, projectImg, link }) {
         ></div>
       </div>
       <div {...className(style.btnCon)}>
-        <div {...className(shared.btn, style.btn)}>Go to website</div>
+        <PrimaryButton extraButtonStyle={style.button}>
+          Go to website
+        </PrimaryButton>
       </div>
     </a>
   );

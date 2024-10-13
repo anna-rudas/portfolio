@@ -80,7 +80,7 @@
   height: 0;
 }
 
-.btn {
+.button {
   border: 1px solid var(--primary-dark);
   background-color: var(--primary-light);
   color: var(--primary-dark);
@@ -105,12 +105,13 @@
     height: 100%;
   }
 
-  .cardCon:hover .btn {
+  .cardCon:hover .button {
     animation-name: btnReveal;
     animation-duration: 0.5s;
     animation-iteration-count: 1;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
+    box-shadow: none !important;
   }
 
   .cardCon:hover .projectImg {
