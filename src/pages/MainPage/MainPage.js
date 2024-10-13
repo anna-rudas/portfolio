@@ -7,7 +7,7 @@ import Hero from "../../components/sections/Hero";
 import MyProjects from "../../components/sections/MyProjects";
 import { heroMain, navLinksMain } from "../../data/constants";
 
-function Main() {
+function MainPage() {
   return (
     <div className="wrapper">
       <Header navLinks={navLinksMain} />
@@ -25,4 +25,4 @@ function Main() {
   );
 }
 
-export default Main;
+export default MainPage;
