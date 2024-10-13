@@ -79,32 +79,6 @@
   flex-wrap: wrap;
 }
 
-.btn {
-  font-family: var(--font-primary);
-  font-size: 1.5rem;
-  font-weight: 400;
-  border-radius: var(--border-radius);
-  padding: var(--padding) calc(var(--padding) * 2);
-  text-transform: uppercase;
-  transition: all 0.3s ease-in-out;
-  margin: calc(var(--margin) * 3) 0;
-  width: fit-content;
-  height: fit-content;
-  display: block;
-}
-
-.btnLight {
-  border: 2px solid var(--primary-light);
-  background-color: var(--primary-light);
-  color: var(--primary-dark);
-}
-
-.btnDark {
-  border: 2px solid var(--primary-dark);
-  background-color: var(--primary-dark);
-  color: var(--primary-light);
-}
-
 .frame {
   border-radius: var(--border-radius);
   border: 1px solid var(--primary-dark);
@@ -132,34 +106,6 @@
 }
 
 @media (hover: hover) {
-  .btn:hover {
-    cursor: pointer;
-  }
-
-  .btnLight:hover {
-    background-color: var(--primary-dark);
-    color: var(--primary-light);
-    box-shadow: 5px 5px 0px var(--primary-light);
-  }
-
-  .btnLight:focus-visible {
-    background-color: var(--primary-dark);
-    color: var(--primary-light);
-    box-shadow: 5px 5px 0px var(--primary-light);
-  }
-
-  .btnDark:hover {
-    background-color: var(--primary-light);
-    color: var(--primary-dark);
-    box-shadow: 5px 5px 0px var(--primary-dark);
-  }
-
-  .btnDark:focus-visible {
-    background-color: var(--primary-light);
-    color: var(--primary-dark);
-    box-shadow: 5px 5px 0px var(--primary-dark);
-  }
-
   .links:hover {
     text-decoration-line: underline;
     text-decoration-style: double;
@@ -217,9 +163,5 @@
     padding: calc(var(--padding) * 5);
     margin: calc(var(--margin) * 2) 0;
     padding-top: calc(var(--padding) * 10);
-  }
-
-  .btn {
-    font-size: 1.2rem;
   }
 }
