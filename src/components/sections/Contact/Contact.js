@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { className } from "../../../utilities/helpers";
 import * as style from "./Contact.module.css";
 import * as shared from "../../../assets/styles/shared.module.css";
-import * as textStyles from "../../../assets/styles/text-styles.css";
+import * as textStyles from "../../../assets/styles/text-styles.module.css";
 import { linkedInLink, emailAddress } from "../../../data/constants";
 import PrimaryButton from "../../buttons/PrimaryButton/PrimaryButton";
 import SecondaryLink from "../../buttons/SecondaryLink/SecondaryLink";

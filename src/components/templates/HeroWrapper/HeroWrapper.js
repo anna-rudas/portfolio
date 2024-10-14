@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { className } from "../../../utilities/helpers";
 import * as style from "./HeroWrapper.module.css";
-import * as textStyles from "../../../assets/styles/text-styles.css";
+import * as textStyles from "../../../assets/styles/text-styles.module.css";
 import ArrowIcon from "../../../assets/icons/ArrowIcon";
 
 function HeroWrapper({

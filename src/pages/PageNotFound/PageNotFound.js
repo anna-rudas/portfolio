@@ -1,6 +1,6 @@
 import React from "react";
 import { className } from "../../utilities/helpers";
-import * as textStyles from "../../assets/styles/text-styles.css";
+import * as textStyles from "../../assets/styles/text-styles.module.css";
 import * as style from "./PageNotFound.module.css";
 import PrimaryButton from "../../components/buttons/PrimaryButton/PrimaryButton";
 import SectionWrapper from "../../components/templates/SectionWrapper/SectionWrapper";

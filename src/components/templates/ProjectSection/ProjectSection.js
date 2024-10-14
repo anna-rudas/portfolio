@@ -1,7 +1,7 @@
 import React from "react";
 import { className } from "../../../utilities/helpers";
 import * as style from "./ProjectSection.module.css";
-import * as textStyles from "../../../assets/styles/text-styles.css";
+import * as textStyles from "../../../assets/styles/text-styles.module.css";
 import * as shared from "../../../assets/styles/shared.module.css";
 import PrimaryButton from "../../buttons/PrimaryButton/PrimaryButton";
 import SectionWrapper from "../SectionWrapper/SectionWrapper";

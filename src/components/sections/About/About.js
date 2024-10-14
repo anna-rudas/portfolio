@@ -2,7 +2,7 @@ import React from "react";
 import { className } from "../../../utilities/helpers";
 import * as style from "./About.module.css";
 import * as shared from "../../../assets/styles/shared.module.css";
-import * as textStyles from "../../../assets/styles/text-styles.css";
+import * as textStyles from "../../../assets/styles/text-styles.module.css";
 import { skillTags, linkedInLink, emailAddress } from "../../../data/constants";
 import aboutImg from "../../../assets/images/about-me.jpg";
 import SecondaryLink from "../../buttons/SecondaryLink/SecondaryLink";
