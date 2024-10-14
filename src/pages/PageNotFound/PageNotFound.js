@@ -1,11 +1,11 @@
 import React from "react";
 import { className } from "../../utilities/helpers";
 import * as textStyles from "../../assets/styles/text-styles.css";
-import * as style from "./NotFound.module.css";
+import * as style from "./PageNotFound.module.css";
 import PrimaryButton from "../../components/buttons/PrimaryButton/PrimaryButton";
 import SectionWrapper from "../../components/templates/SectionWrapper/SectionWrapper";
 
-function NotFound() {
+function PageNotFound() {
   return (
     <div className="wrapper">
       <SectionWrapper
@@ -23,4 +23,4 @@ function NotFound() {
   );
 }
 
-export default NotFound;
+export default PageNotFound;
