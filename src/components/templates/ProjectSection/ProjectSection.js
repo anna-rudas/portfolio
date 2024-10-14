@@ -1,8 +1,10 @@
 import React from "react";
 import { className } from "../../../utilities/helpers";
 import * as style from "./ProjectSection.module.css";
+import * as textStyles from "../../../assets/styles/text-styles.css";
 import * as shared from "../../../assets/styles/shared.module.css";
 import PrimaryButton from "../../buttons/PrimaryButton/PrimaryButton";
+import SectionWrapper from "../SectionWrapper/SectionWrapper";
 
 function ProjectSection({
   projectName,
@@ -13,11 +15,10 @@ function ProjectSection({
   website,
 }) {
   return (
-    <div {...className(shared.section)} id={projectName}>
-      <h2 {...className(shared.title, shared.titlePrimary)}>{projectName}</h2>
+    <SectionWrapper sectionId={projectName} sectionTitle={projectName}>
       <div {...className(style.projectDetailsCon)}>
         <div {...className(style.details)}>
-          <p {...className(shared.paragraph)}>
+          <p {...className(textStyles.normalText)}>
             {text.map((currentParagraph, index) => {
               return (
                 <React.Fragment key={index}>
@@ -58,7 +59,7 @@ function ProjectSection({
           alt=""
         />
       </div>
-    </div>
+    </SectionWrapper>
   );
 }
 

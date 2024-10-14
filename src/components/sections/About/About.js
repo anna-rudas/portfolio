@@ -2,15 +2,16 @@ import React from "react";
 import { className } from "../../../utilities/helpers";
 import * as style from "./About.module.css";
 import * as shared from "../../../assets/styles/shared.module.css";
+import * as textStyles from "../../../assets/styles/text-styles.css";
 import { skillTags, linkedInLink, emailAddress } from "../../../data/constants";
 import aboutImg from "../../../assets/images/about-me.jpg";
 import SecondaryLink from "../../buttons/SecondaryLink/SecondaryLink";
+import SectionWrapper from "../../templates/SectionWrapper/SectionWrapper";
 
 function About() {
   return (
-    <div {...className(shared.section)} id="about">
-      <h2 {...className(shared.title, shared.titlePrimary)}>About me</h2>
-      <p {...className(shared.sectionText, shared.paragraph)}>
+    <SectionWrapper sectionId="about" sectionTitle="About me">
+      <p {...className(textStyles.sectionText, textStyles.normalText)}>
         In 2022 I have completed my Bachelor of Science, majoring in Electrical
         Engineering. While in university not only did I study natural science,
         but also gained an understanding of the principles of OOP, as well as
@@ -38,10 +39,8 @@ function About() {
         </div>
         <div {...className(style.skillsTextCon)}>
           <div>
-            <h3 {...className(shared.title, shared.titleSecondary)}>
-              My Skills
-            </h3>
-            <p {...className(shared.paragraph)}>
+            <h3 {...className(textStyles.subtitleText)}>My Skills</h3>
+            <p {...className(textStyles.normalText)}>
               I am constantly working to add to my list of skills, as I am the
               happiest when creating, exploring or learning something new.
               <br />
@@ -60,7 +59,7 @@ function About() {
           </ul>
         </div>
       </div>
-    </div>
+    </SectionWrapper>
   );
 }
 

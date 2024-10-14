@@ -1,6 +1,7 @@
 import React from "react";
 import { className } from "../../../utilities/helpers";
 import * as style from "./ProjectCard.module.css";
+import * as textStyles from "../../../assets/styles/text-styles.css";
 import * as shared from "../../../assets/styles/shared.module.css";
 import PrimaryButton from "../../buttons/PrimaryButton/PrimaryButton";
 
@@ -17,10 +18,8 @@ function ProjectCard({ name, title, intro, skillTags, projectImg, link }) {
       </div>
       <div {...className(style.projectBody)}>
         <div {...className(style.projectDesc)}>
-          <span {...className(shared.title, shared.titleSecondary)}>
-            {title}
-          </span>
-          <span {...className(shared.paragraph)}>{intro}</span>
+          <span {...className(textStyles.subtitleText)}>{title}</span>
+          <span {...className(textStyles.normalText)}>{intro}</span>
           <ul {...className(shared.tagsCon)}>
             {skillTags.map((currentTag) => {
               return (

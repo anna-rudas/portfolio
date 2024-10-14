@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { className } from "../../../utilities/helpers";
 import * as style from "./HeroWrapper.module.css";
-import * as shared from "../../../assets/styles/shared.module.css";
+import * as textStyles from "../../../assets/styles/text-styles.css";
 import ArrowIcon from "../../../assets/icons/ArrowIcon";
 
 function HeroWrapper({
@@ -35,10 +35,12 @@ function HeroWrapper({
       <div {...className(style.heroBackground)}></div>
       <div>
         {textBeforeTitle && (
-          <span {...className(shared.paragraphHero)}>{textBeforeTitle}</span>
+          <span {...className(textStyles.heroNormalText)}>
+            {textBeforeTitle}
+          </span>
         )}
-        <h1 {...className(shared.title, shared.titleHero)}>{title}</h1>
-        <span {...className(shared.paragraphHero, shared.sectionText)}>
+        <h1 {...className(textStyles.heroTitleText)}>{title}</h1>
+        <span {...className(textStyles.heroNormalText, textStyles.sectionText)}>
           {textAfterTitle}
         </span>
         {children}

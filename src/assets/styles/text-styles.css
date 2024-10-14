@@ -1,0 +1,93 @@
+.titleText {
+  font-family: var(--font-primary);
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--primary-dark);
+  font-size: 12vw;
+  margin: calc(var(--margin) * 2) 0;
+}
+
+.heroTitleText {
+  font-family: var(--font-primary);
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--primary-light);
+  font-size: 12vw;
+  margin: calc(var(--margin) * 2) 0;
+}
+
+.heroTitleText::selection {
+  color: var(--primary-dark);
+  background: var(--primary-light);
+}
+
+.heroNormalText {
+  font-family: var(--font-secondary);
+  font-weight: 400;
+  color: var(--primary-light);
+  font-size: 1.5rem;
+  line-height: 35px;
+}
+
+.heroNormalText::selection {
+  color: var(--primary-dark);
+  background: var(--primary-light);
+}
+
+.normalText {
+  font-family: var(--font-secondary);
+  font-weight: 400;
+  color: var(--primary-dark);
+  font-size: 1.2rem;
+  line-height: 25px;
+}
+
+.subtitleText {
+  font-family: var(--font-primary);
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--primary-dark);
+  font-size: 2rem;
+  margin-bottom: var(--margin);
+}
+
+.sectionText {
+  width: 90%;
+  max-width: 900px;
+  display: block;
+}
+
+@media (min-width: 1100px) {
+  .heroTitleText {
+    font-size: 9rem;
+  }
+
+  .titleText {
+    font-size: 9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroTitleText {
+    font-size: 17vw;
+  }
+
+  .titleText {
+    font-size: 3rem;
+  }
+
+  .subtitleText {
+    font-size: 1.8rem;
+  }
+
+  .heroNormalText {
+    font-size: 1.2rem;
+  }
+
+  .normalText {
+    font-size: 1rem;
+  }
+  .sectionText {
+    width: 95%;
+  }
+}

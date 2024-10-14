@@ -2,9 +2,11 @@ import React, { useEffect, useState } from "react";
 import { className } from "../../../utilities/helpers";
 import * as style from "./Contact.module.css";
 import * as shared from "../../../assets/styles/shared.module.css";
+import * as textStyles from "../../../assets/styles/text-styles.css";
 import { linkedInLink, emailAddress } from "../../../data/constants";
 import PrimaryButton from "../../buttons/PrimaryButton/PrimaryButton";
 import SecondaryLink from "../../buttons/SecondaryLink/SecondaryLink";
+import SectionWrapper from "../../templates/SectionWrapper/SectionWrapper";
 
 function Contact() {
   const [isBtnPressed, setIsBtnPressed] = useState(false);
@@ -47,9 +49,8 @@ function Contact() {
   }, []);
 
   return (
-    <div {...className(shared.section)} id="contact">
-      <h2 {...className(shared.title, shared.titlePrimary)}>Contact</h2>
-      <p {...className(shared.sectionText, shared.paragraph)}>
+    <SectionWrapper sectionId="contact" sectionTitle="Contact">
+      <p {...className(textStyles.sectionText, textStyles.normalText)}>
         Write to me here or send me an{" "}
         <SecondaryLink to={emailAddress}>email</SecondaryLink>. You can also
         contact me on <SecondaryLink to={linkedInLink}>LinkedIn</SecondaryLink>.
@@ -120,7 +121,7 @@ function Contact() {
           </PrimaryButton>
         </form>
       </div>
-    </div>
+    </SectionWrapper>
   );
 }
 
