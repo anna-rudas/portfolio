@@ -3,20 +3,15 @@ import About from "../../components/sections/About";
 import Contact from "../../components/sections/Contact";
 import Footer from "../../components/features/Footer";
 import Header from "../../components/features/Header";
-import Hero from "../../components/sections/Hero";
 import MyProjects from "../../components/sections/MyProjects";
-import { heroMain, navLinksMain } from "../../data/constants";
+import { navLinksMain } from "../../data/constants";
+import HeroMain from "../../components/sections/HeroMain/HeroMain";
 
 function MainPage() {
   return (
     <div className="wrapper">
       <Header navLinks={navLinksMain} />
-      <Hero
-        {...heroMain}
-        btnLink="CV-annarudas.pdf"
-        isItMain={true}
-        arrowLink="#about"
-      />
+      <HeroMain />
       <About />
       <MyProjects />
       <Contact />

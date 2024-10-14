@@ -1,24 +1,15 @@
 import React from "react";
 import Header from "../../components/features/Header";
-import Hero from "../../components/sections/Hero";
 import ProjectSection from "../../components/templates/ProjectSection";
 import Footer from "../../components/features/Footer";
-import {
-  heroProjects,
-  navLinksProjects,
-  projectDetails,
-} from "../../data/constants";
+import { navLinksProjects, projectDetails } from "../../data/constants";
+import HeroProjects from "../../components/sections/HeroProjects/HeroProjects";
 
 function ProjectsPage() {
   return (
     <div className="wrapper">
       <Header navLinks={navLinksProjects} />
-      <Hero
-        {...heroProjects}
-        btnLink="/"
-        isItMain={false}
-        arrowLink="#memery"
-      />
+      <HeroProjects />
       {projectDetails.map((currentProject) => {
         return (
           <ProjectSection

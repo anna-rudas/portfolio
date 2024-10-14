@@ -82,21 +82,6 @@ export const myProjects = [
 export const navLinksMain = ["about", "projects", "contact"];
 export const navLinksProjects = ["memery", "mortle", "notelux"];
 
-export const heroMain = {
-  before: "Hello, my name is",
-  main: "Anna Rudas",
-  intro: "I am a software developer based in Germany.",
-  btnText: "Download my CV",
-};
-
-export const heroProjects = {
-  before: "",
-  main: "My Projects",
-  intro:
-    "To see what I'm currently working on, take a look around on my Github.",
-  btnText: "Back to home page",
-};
-
 export const projectDetails = [
   {
     projectName: "memery",
