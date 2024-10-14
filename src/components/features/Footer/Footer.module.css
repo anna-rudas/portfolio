@@ -32,19 +32,6 @@
   transition: all 0.2s ease-in-out;
 }
 
-.credit {
-  color: var(--primary-light);
-  font-family: var(--font-secondary);
-  font-size: 1rem;
-  font-weight: 400;
-  text-align: center;
-}
-
-.credit::selection {
-  color: var(--primary-dark);
-  background: var(--primary-light);
-}
-
 @media (hover: hover) {
   .icons:hover {
     color: var(--text-bg);

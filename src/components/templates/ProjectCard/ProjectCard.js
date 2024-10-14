@@ -14,7 +14,9 @@ function ProjectCard({ name, title, intro, skillTags, projectImg, link }) {
       {...className(style.cardCon)}
     >
       <div {...className(style.projectName)}>
-        <div {...className(style.name)}>{name}</div>
+        <div {...className(style.name, textStyles.primaryButtonText)}>
+          {name}
+        </div>
       </div>
       <div {...className(style.projectBody)}>
         <div {...className(style.projectDesc)}>
@@ -23,7 +25,10 @@ function ProjectCard({ name, title, intro, skillTags, projectImg, link }) {
           <ul {...className(shared.tagsCon)}>
             {skillTags.map((currentTag) => {
               return (
-                <li key={currentTag} {...className(shared.skillTags)}>
+                <li
+                  key={currentTag}
+                  {...className(shared.skillTags, textStyles.tagText)}
+                >
                   {currentTag}
                 </li>
               );

@@ -1,6 +1,7 @@
 import React from "react";
 import { className } from "../../../utilities/helpers";
 import * as style from "./Footer.module.css";
+import * as textStyles from "../../../assets/styles/text-styles.module.css";
 import { footerLinks } from "../../../data/constants";
 
 function Footer() {
@@ -21,7 +22,9 @@ function Footer() {
           );
         })}
       </div>
-      <span {...className(style.credit)}>Designed and built by Anna Rudas</span>
+      <span {...className(textStyles.footerText)}>
+        Designed and built by Anna Rudas
+      </span>
     </div>
   );
 }

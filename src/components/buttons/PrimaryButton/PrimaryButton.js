@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { className } from "../../../utilities/helpers";
 import * as style from "./PrimaryButton.module.css";
+import * as textStyles from "../../../assets/styles/text-styles.module.css";
 
 function PrimaryButton({
   buttonLinkInternal,
@@ -20,6 +21,7 @@ function PrimaryButton({
         to={buttonLinkInternal}
         {...className(
           style.button,
+          textStyles.primaryButtonText,
           isDarkButtonStyle ? style.buttonDark : style.buttonLight,
           extraButtonStyle
         )}
@@ -38,6 +40,7 @@ function PrimaryButton({
         rel="noreferrer"
         {...className(
           style.button,
+          textStyles.primaryButtonText,
           isDarkButtonStyle ? style.buttonDark : style.buttonLight,
           extraButtonStyle
         )}
@@ -51,6 +54,7 @@ function PrimaryButton({
     <button
       {...className(
         style.button,
+        textStyles.primaryButtonText,
         isDarkButtonStyle ? style.buttonDark : style.buttonLight,
         extraButtonStyle
       )}

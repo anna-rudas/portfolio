@@ -51,7 +51,10 @@ function About() {
           <ul {...className(shared.tagsCon)}>
             {skillTags.map((currentTag) => {
               return (
-                <li key={currentTag} {...className(shared.skillTags)}>
+                <li
+                  key={currentTag}
+                  {...className(shared.skillTags, textStyles.tagText)}
+                >
                   {currentTag}
                 </li>
               );

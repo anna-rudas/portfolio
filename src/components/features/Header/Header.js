@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { className } from "../../../utilities/helpers";
 import * as style from "./Header.module.css";
+import * as textStyles from "../../../assets/styles/text-styles.module.css";
 import HamburgerIcon from "../../../assets/icons/HamburgerIcon";
 import { Link } from "react-router-dom";
 import PrimaryButton from "../../buttons/PrimaryButton/PrimaryButton";
@@ -14,7 +15,7 @@ function Header({ navLinks }) {
       <div {...className(style.navList)}>
         <Link
           to="/"
-          {...className(style.initials)}
+          {...className(textStyles.headerInitialsText)}
           onClick={() => {
             window.scrollTo(0, 0);
           }}

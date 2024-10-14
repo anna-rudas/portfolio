@@ -64,20 +64,32 @@ function Contact() {
         >
           <input type="hidden" name="form-name" value="contactForm" />
           <div {...className(style.senderInfo)}>
-            <label {...className(style.senderInfoLabel, style.label)}>
+            <label
+              {...className(
+                style.senderInfoLabel,
+                style.label,
+                textStyles.inputLabelText
+              )}
+            >
               Name
               <input
-                {...className(style.input)}
+                {...className(style.input, textStyles.inputText)}
                 type="text"
                 name="name"
                 required
                 maxLength={50}
               />
             </label>
-            <label {...className(style.senderInfoLabel, style.label)}>
+            <label
+              {...className(
+                style.senderInfoLabel,
+                style.label,
+                textStyles.inputLabelText
+              )}
+            >
               Email
               <input
-                {...className(style.input)}
+                {...className(style.input, textStyles.inputText)}
                 type="email"
                 name="email"
                 required
@@ -85,19 +97,31 @@ function Contact() {
               />
             </label>
           </div>
-          <label {...className(style.textLabel, style.label)}>
+          <label
+            {...className(
+              style.textLabel,
+              style.label,
+              textStyles.inputLabelText
+            )}
+          >
             Subject
             <input
-              {...className(style.input)}
+              {...className(style.input, textStyles.inputText)}
               name="subject"
               required
               maxLength={100}
             ></input>
           </label>
-          <label {...className(style.textLabel, style.label)}>
+          <label
+            {...className(
+              style.textLabel,
+              style.label,
+              textStyles.inputLabelText
+            )}
+          >
             Message
             <textarea
-              {...className(style.textArea, style.input)}
+              {...className(style.textArea, style.input, textStyles.inputText)}
               name="message"
               cols="30"
               rows="10"

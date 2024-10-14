@@ -20,13 +20,6 @@
   padding: calc(var(--padding) * 2) calc(var(--padding) * 4);
 }
 
-.initials {
-  font-family: var(--font-primary);
-  font-size: 1.2rem;
-  font-weight: 400;
-  color: var(--primary-light);
-}
-
 .nav {
   display: flex;
   justify-content: center;

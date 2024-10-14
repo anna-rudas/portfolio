@@ -1,8 +1,4 @@
 .skillTags {
-  font-family: var(--font-secondary);
-  font-size: 1.3rem;
-  font-weight: 400;
-  color: var(--primary-dark);
   border-radius: var(--border-radius);
   padding: var(--padding) calc(var(--padding) * 2);
   background-color: var(--text-bg);

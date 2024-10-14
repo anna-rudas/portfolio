@@ -29,11 +29,6 @@
 }
 
 .label {
-  font-family: var(--font-secondary);
-  font-size: 1.3rem;
-  font-weight: 400;
-  color: var(--primary-dark);
-  text-transform: uppercase;
   gap: var(--gap);
 }
 
@@ -54,10 +49,7 @@
   background-color: var(--text-bg);
   border: 1px solid var(--primary-dark);
   border-radius: var(--border-radius);
-  font-family: var(--font-secondary);
-  font-size: 1.3rem;
-  font-weight: 400;
-  color: var(--primary-dark);
+
   padding: var(--padding);
 }
 

@@ -1,10 +1,10 @@
 import React from "react";
 import { className } from "../../../utilities/helpers";
-import * as style from "./PrimaryLink.module.css";
+import * as textStyles from "../../../assets/styles/text-styles.module.css";
 
 function PrimaryLink({ to, onLinkClick, children }) {
   return (
-    <a {...className(style.link)} href={to} onClick={onLinkClick}>
+    <a {...className(textStyles.primaryLink)} href={to} onClick={onLinkClick}>
       {children}
     </a>
   );
