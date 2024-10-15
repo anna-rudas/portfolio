@@ -1,0 +1,22 @@
+.skillTagContent {
+  border-radius: var(--border-radius);
+  padding: var(--padding-xs) var(--padding-sm);
+  background-color: var(--text-bg);
+  box-shadow: 5px 5px 0px var(--primary-dark);
+  transition: all 0.3s ease-in-out;
+}
+
+.tagsContainer {
+  display: flex;
+  gap: var(--gap-sm);
+  flex-wrap: wrap;
+}
+
+@media (hover: hover) {
+  .skillTagContent:hover {
+    cursor: default;
+    color: var(--text-bg);
+    background-color: var(--primary-dark);
+    box-shadow: none;
+  }
+}

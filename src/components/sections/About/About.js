@@ -7,6 +7,7 @@ import { skillTags, linkedInLink, emailAddress } from "../../../data/constants";
 import aboutImg from "../../../assets/images/about-me.jpg";
 import SecondaryLink from "../../buttons/SecondaryLink/SecondaryLink";
 import SectionWrapper from "../../templates/SectionWrapper/SectionWrapper";
+import InfoTags from "../../templates/InfoTags/InfoTags";
 
 function About() {
   return (
@@ -48,18 +49,7 @@ function About() {
               failing and learning from your mistakes.
             </p>
           </div>
-          <ul {...className(shared.tagsCon)}>
-            {skillTags.map((currentTag) => {
-              return (
-                <li
-                  key={currentTag}
-                  {...className(shared.skillTags, textStyles.tagText)}
-                >
-                  {currentTag}
-                </li>
-              );
-            })}
-          </ul>
+          <InfoTags tagList={skillTags} />
         </div>
       </div>
     </SectionWrapper>

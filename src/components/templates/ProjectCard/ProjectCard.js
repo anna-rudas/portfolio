@@ -2,8 +2,8 @@ import React from "react";
 import { className } from "../../../utilities/helpers";
 import * as style from "./ProjectCard.module.css";
 import * as textStyles from "../../../assets/styles/text-styles.module.css";
-import * as shared from "../../../assets/styles/shared.module.css";
 import PrimaryButton from "../../buttons/PrimaryButton/PrimaryButton";
+import InfoTags from "../InfoTags/InfoTags";
 
 function ProjectCard({ name, title, intro, skillTags, projectImg, link }) {
   return (
@@ -22,18 +22,7 @@ function ProjectCard({ name, title, intro, skillTags, projectImg, link }) {
         <div {...className(style.projectDesc)}>
           <span {...className(textStyles.subtitleText)}>{title}</span>
           <span {...className(textStyles.normalText)}>{intro}</span>
-          <ul {...className(shared.tagsCon)}>
-            {skillTags.map((currentTag) => {
-              return (
-                <li
-                  key={currentTag}
-                  {...className(shared.skillTags, textStyles.tagText)}
-                >
-                  {currentTag}
-                </li>
-              );
-            })}
-          </ul>
+          <InfoTags tagList={skillTags} />
         </div>
         <div
           style={{ backgroundImage: "url(" + projectImg + ")" }}
