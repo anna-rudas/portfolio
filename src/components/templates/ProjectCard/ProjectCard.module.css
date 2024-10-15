@@ -12,7 +12,7 @@
 
 .projectName {
   width: 50px;
-  padding: var(--padding);
+  padding: var(--padding-xs);
   background-color: var(--primary-dark);
   border-top-left-radius: var(--border-radius);
   border-bottom-left-radius: var(--border-radius);
@@ -34,7 +34,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: var(--gap);
+  gap: var(--gap-xs);
   border-radius: var(--border-radius);
 }
 
@@ -45,9 +45,9 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding: calc(var(--padding) * 2);
-  padding-left: calc(var(--padding) * 5);
-  gap: calc(var(--gap) * 2);
+  padding: var(--padding-sm);
+  padding-left: var(--padding-md);
+  gap: var(--gap-sm);
 }
 
 .projectImg {
@@ -150,7 +150,7 @@
     width: 100%;
     height: fit-content;
     max-height: 70%;
-    padding: calc(var(--padding) * 4);
+    padding: var(--padding-md);
   }
 
   .projectImg {

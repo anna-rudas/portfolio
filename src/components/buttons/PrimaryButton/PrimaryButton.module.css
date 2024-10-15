@@ -1,9 +1,9 @@
 .button {
   border-radius: var(--border-radius);
-  padding: var(--padding) calc(var(--padding) * 2);
+  padding: var(--padding-xs) var(--padding-sm);
 
   transition: all 0.3s ease-in-out;
-  margin: calc(var(--margin) * 3) 0;
+  margin: var(--margin-md) 0;
   width: fit-content;
   height: fit-content;
   display: block;

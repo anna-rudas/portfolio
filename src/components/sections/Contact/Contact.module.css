@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  padding: calc(var(--padding) * 10) calc(var(--padding) * 2);
+  padding: var(--padding-lg) var(--padding-sm);
   min-height: 50vh;
 }
 
@@ -14,10 +14,10 @@
   max-width: 900px;
   min-height: 485px;
   height: 100%;
-  gap: calc(var(--gap) * 4);
+  gap: var(--gap-md);
   flex-direction: column;
   background-color: var(--primary-light);
-  padding: calc(var(--padding) * 6);
+  padding: var(--padding-md);
 }
 
 .senderInfo {
@@ -29,7 +29,7 @@
 }
 
 .label {
-  gap: var(--gap);
+  gap: var(--gap-xs);
 }
 
 .senderInfoLabel {
@@ -50,7 +50,7 @@
   border: 1px solid var(--primary-dark);
   border-radius: var(--border-radius);
 
-  padding: var(--padding);
+  padding: var(--padding-xs);
 }
 
 .input:focus {
@@ -152,6 +152,6 @@
 
 @media (max-width: 480px) {
   .form {
-    padding: calc(var(--padding) * 4);
+    padding: var(--padding-md);
   }
 }

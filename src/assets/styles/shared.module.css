@@ -1,6 +1,6 @@
 .skillTags {
   border-radius: var(--border-radius);
-  padding: var(--padding) calc(var(--padding) * 2);
+  padding: var(--padding-xs) var(--padding-sm);
   background-color: var(--text-bg);
   box-shadow: 5px 5px 0px var(--primary-dark);
   transition: all 0.3s ease-in-out;
@@ -8,7 +8,7 @@
 
 .tagsCon {
   display: flex;
-  gap: calc(var(--gap) * 2);
+  gap: var(--gap-sm);
   flex-wrap: wrap;
 }
 

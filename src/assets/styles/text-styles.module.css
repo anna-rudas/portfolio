@@ -4,7 +4,7 @@
   text-transform: uppercase;
   color: var(--primary-dark);
   font-size: 12vw;
-  margin: calc(var(--margin) * 2) 0;
+  margin: var(--margin-md) 0;
 }
 
 .heroTitleText {
@@ -13,7 +13,7 @@
   text-transform: uppercase;
   color: var(--primary-light);
   font-size: 12vw;
-  margin: calc(var(--margin) * 2) 0;
+  margin: var(--margin-md) 0;
 }
 
 .heroTitleText::selection {
@@ -48,7 +48,7 @@
   text-transform: uppercase;
   color: var(--primary-dark);
   font-size: 2rem;
-  margin-bottom: var(--margin);
+  margin-bottom: var(--margin-sm);
 }
 
 .sectionText {

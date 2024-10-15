@@ -1,6 +1,6 @@
 .sectionWrapper {
-  padding: calc(var(--padding) * 5) calc(var(--padding) * 13);
-  margin: calc(var(--margin) * 5) 0;
+  padding: var(--padding-md) var(--padding-lg);
+  margin: var(--margin-lg) 0;
   min-height: 50vh;
   width: 100%;
   max-width: 1200px;
@@ -8,8 +8,8 @@
 
 @media (max-width: 480px) {
   .sectionWrapper {
-    padding: calc(var(--padding) * 5);
-    margin: calc(var(--margin) * 2) 0;
-    padding-top: calc(var(--padding) * 10);
+    padding: var(--padding-md);
+    margin: var(--margin-md) 0;
+    padding-top: var(--padding-lg);
   }
 }
