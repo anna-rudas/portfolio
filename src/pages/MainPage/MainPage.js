@@ -6,17 +6,18 @@ import Header from "../../components/features/Header";
 import MyProjects from "../../components/sections/MyProjects";
 import { navLinksMain } from "../../data/constants";
 import HeroMain from "../../components/sections/HeroMain/HeroMain";
+import PageWrapper from "../../components/templates/PageWrapper";
 
 function MainPage() {
   return (
-    <div className="wrapper">
+    <PageWrapper>
       <Header navLinks={navLinksMain} />
       <HeroMain />
       <About />
       <MyProjects />
       <Contact />
       <Footer />
-    </div>
+    </PageWrapper>
   );
 }
 

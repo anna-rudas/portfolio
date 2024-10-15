@@ -1,0 +1,9 @@
+.pageWrapper {
+  background-image: url("../../../assets/images/background.svg");
+  background-repeat: repeat;
+  background-color: var(--primary-light);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
