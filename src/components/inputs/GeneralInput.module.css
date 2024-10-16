@@ -1,0 +1,45 @@
+.generalInputContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  min-height: 100px;
+}
+
+.generalInputContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.validationErrorText {
+  color: var(--danger) !important;
+}
+
+.labelError {
+  color: var(--danger) !important;
+}
+
+.input {
+  height: 50px;
+  background-color: var(--text-bg);
+  border: 1px solid var(--primary-dark);
+  border-radius: var(--border-radius);
+
+  padding: var(--padding-xs);
+}
+
+.input:focus {
+  outline: none;
+}
+
+.textArea {
+  resize: none;
+  height: 120px;
+}
+
+.inputError {
+  border: 1px solid var(--danger) !important;
+}

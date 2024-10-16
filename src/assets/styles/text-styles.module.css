@@ -42,6 +42,13 @@
   line-height: 25px;
 }
 
+.smallText {
+  font-family: var(--font-secondary);
+  font-weight: 400;
+  color: var(--primary-dark);
+  font-size: 1rem;
+}
+
 .subtitleText {
   font-family: var(--font-primary);
   font-weight: 400;
