@@ -7,12 +7,12 @@ import { Link } from "react-router-dom";
 import PrimaryButton from "../../buttons/PrimaryButton/PrimaryButton";
 import PrimaryLink from "../../buttons/PrimaryLink/PrimaryLink";
 
-function Header({ navLinks }) {
+function Header({ navigationLinks }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <div {...className(style.header)}>
-      <div {...className(style.navList)}>
+    <div {...className(style.headerContainer)}>
+      <div {...className(style.headerContent)}>
         <Link
           to="/"
           {...className(textStyles.headerInitialsText)}
@@ -22,9 +22,14 @@ function Header({ navLinks }) {
         >
           AR
         </Link>
-        <nav {...className(style.nav, isMenuOpen && style.mobileMenu)}>
-          <ul {...className(style.linksCon)}>
-            {navLinks.map((current) => {
+        <nav
+          {...className(
+            style.navigationContainer,
+            isMenuOpen && style.mobileNavigationContainer
+          )}
+        >
+          <ul {...className(style.navigationLinksContainer)}>
+            {navigationLinks.map((current) => {
               return (
                 <li key={current}>
                   <PrimaryLink
@@ -40,7 +45,7 @@ function Header({ navLinks }) {
             })}
           </ul>
           <PrimaryButton
-            extraButtonStyle={`${style.button} ${style.buttonMobile}`}
+            extraButtonStyle={`${style.headerButton} ${style.mobileHeaderButton}`}
             buttonLinkInternal="/CV-annarudas.pdf"
             isButtonToDownload={true}
             isDarkButtonStyle={false}
@@ -50,7 +55,7 @@ function Header({ navLinks }) {
         </nav>
 
         <PrimaryButton
-          extraButtonStyle={style.button}
+          extraButtonStyle={`${style.headerButton} ${style.desktopHeaderButton}`}
           buttonLinkInternal="/CV-annarudas.pdf"
           isButtonToDownload={true}
           isDarkButtonStyle={false}
@@ -58,12 +63,12 @@ function Header({ navLinks }) {
           My CV
         </PrimaryButton>
         <button
-          {...className(style.btnHamburger)}
+          {...className(style.hamburgerButton)}
           onClick={() => {
             setIsMenuOpen(!isMenuOpen);
           }}
         >
-          <HamburgerIcon {...className(style.iconHamburger)} />
+          <HamburgerIcon {...className(style.hamburgerIcon)} />
         </button>
       </div>
     </div>

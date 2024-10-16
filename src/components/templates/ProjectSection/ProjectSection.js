@@ -8,18 +8,18 @@ import SectionWrapper from "../SectionWrapper/SectionWrapper";
 
 function ProjectSection({
   projectName,
-  text,
-  mobileScn,
-  desktopScn,
-  github,
-  website,
+  projectDetails,
+  mobileScreenshot,
+  desktopScreenshot,
+  githubLink,
+  websiteLink,
 }) {
   return (
     <SectionWrapper sectionId={projectName} sectionTitle={projectName}>
-      <div {...className(style.projectDetailsCon)}>
-        <div {...className(style.details)}>
+      <div {...className(style.projectSectionContainer)}>
+        <div {...className(style.projectDetailsContent)}>
           <p {...className(textStyles.normalText)}>
-            {text.map((currentParagraph, index) => {
+            {projectDetails.map((currentParagraph, index) => {
               return (
                 <React.Fragment key={index}>
                   {currentParagraph}
@@ -28,34 +28,42 @@ function ProjectSection({
               );
             })}
           </p>
-          <div {...className(style.btnsCon)}>
+          <div {...className(style.projectLinksContainer)}>
             <PrimaryButton
-              extraButtonStyle={style.button}
-              buttonLinkExternal={github}
+              extraButtonStyle={style.projectLink}
+              buttonLinkExternal={githubLink}
             >
               Github
             </PrimaryButton>
 
             <PrimaryButton
-              extraButtonStyle={style.button}
-              buttonLinkExternal={website}
+              extraButtonStyle={style.projectLink}
+              buttonLinkExternal={websiteLink}
             >
               Website
             </PrimaryButton>
           </div>
         </div>
-        <div {...className(style.mobileScnCon)}>
+        <div {...className(style.mobileScreenshotContainer)}>
           <img
-            {...className(style.mobileScn, shared.frame, shared.frameRight)}
-            src={mobileScn}
+            {...className(
+              style.mobileScreenshotContent,
+              shared.frame,
+              shared.frameRight
+            )}
+            src={mobileScreenshot}
             alt=""
           />
         </div>
       </div>
-      <div {...className(style.desktopScnCon)}>
+      <div {...className(style.desktopScreenshotContainer)}>
         <img
-          {...className(style.desktopScn, shared.frame, shared.frameLeft)}
-          src={desktopScn}
+          {...className(
+            style.desktopScreenshotContent,
+            shared.frame,
+            shared.frameLeft
+          )}
+          src={desktopScreenshot}
           alt=""
         />
       </div>

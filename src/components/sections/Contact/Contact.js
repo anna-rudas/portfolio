@@ -9,8 +9,8 @@ import SecondaryLink from "../../buttons/SecondaryLink/SecondaryLink";
 import SectionWrapper from "../../templates/SectionWrapper/SectionWrapper";
 
 function Contact() {
-  const [isBtnPressed, setIsBtnPressed] = useState(false);
-  const [btnText, setBtnText] = useState("Send");
+  const [isSendButtonPressed, setIsSendButtonPressed] = useState(false);
+  const [buttonText, setButtonText] = useState("Send");
 
   useEffect(() => {
     const handleSubmit = (event) => {
@@ -27,14 +27,14 @@ function Contact() {
         .then(() => console.log("Form successfully submitted"))
         .catch((error) => alert(error));
       document.getElementById("contactForm").reset();
-      setIsBtnPressed(true);
-      setBtnText("Sending...");
+      setIsSendButtonPressed(true);
+      setButtonText("Sending...");
       setTimeout(() => {
-        setBtnText("Sent!");
+        setButtonText("Sent!");
       }, 700);
       setTimeout(() => {
-        setBtnText("Send");
-        setIsBtnPressed(false);
+        setButtonText("Send");
+        setIsSendButtonPressed(false);
       }, 1400);
     };
 
@@ -55,15 +55,15 @@ function Contact() {
         <SecondaryLink to={emailAddress}>email</SecondaryLink>. You can also
         contact me on <SecondaryLink to={linkedInLink}>LinkedIn</SecondaryLink>.
       </p>
-      <div {...className(style.formCon)}>
+      <div {...className(style.formContainer)}>
         <form
           method="post"
-          {...className(style.form, shared.frame, shared.frameLeft)}
+          {...className(shared.frame, shared.frameLeft)}
           name="contactForm"
           id="contactForm"
         >
           <input type="hidden" name="form-name" value="contactForm" />
-          <div {...className(style.senderInfo)}>
+          <div {...className(style.senderInfoContainer)}>
             <label
               {...className(
                 style.senderInfoLabel,
@@ -132,16 +132,16 @@ function Contact() {
           <PrimaryButton
             isDarkButtonStyle={false}
             extraButtonStyle={`${style.btnSubmit} ${
-              isBtnPressed && style.btnInProgress
+              isSendButtonPressed && style.btnInProgress
             }`}
           >
             <div
               {...className(
                 style.btnFill,
-                isBtnPressed && style.btnFillProgress
+                isSendButtonPressed && style.btnFillProgress
               )}
             ></div>
-            <div {...className(style.btnText)}>{btnText}</div>
+            <div {...className(style.btnText)}>{buttonText}</div>
           </PrimaryButton>
         </form>
       </div>

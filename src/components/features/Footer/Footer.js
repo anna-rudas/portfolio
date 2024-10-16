@@ -6,13 +6,13 @@ import { footerLinks } from "../../../data/constants";
 
 function Footer() {
   return (
-    <div {...className(style.footer)}>
-      <div {...className(style.iconCon)}>
+    <div {...className(style.footerContainer)}>
+      <div {...className(style.footerIconsContainer)}>
         {footerLinks.map((current) => {
           return (
             <a
               key={current.link}
-              {...className(style.icons)}
+              {...className(style.footerIcon)}
               target="_blank"
               href={current.link}
               rel="noreferrer"

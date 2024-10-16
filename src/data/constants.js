@@ -2,11 +2,11 @@ import projectImgMortle from "../assets/images/project-cards/mortle.png";
 import projectImgMemery from "../assets/images/project-cards/memery.png";
 import projectImgNotelux from "../assets/images/project-cards/notelux.png";
 import desktopScnMemery from "../assets/images/projects/memery-desktop.png";
-import mobileScnMemery from "../assets/images/projects/memery-mobile.png";
-import desktopScnNotelux from "../assets/images/projects/notelux-desktop.png";
-import mobileScnNotelux from "../assets/images/projects/notelux-mobile.png";
-import desktopScnMortle from "../assets/images/projects/mortle-desktop.png";
-import mobileScnMortle from "../assets/images/projects/mortle-mobile.png";
+import mobileScreenshotMemery from "../assets/images/projects/memery-mobile.png";
+import desktopScreenshotNotelux from "../assets/images/projects/notelux-desktop.png";
+import mobileScreenshotNotelux from "../assets/images/projects/notelux-mobile.png";
+import desktopScreenshotMortle from "../assets/images/projects/mortle-desktop.png";
+import mobileScreenshotMortle from "../assets/images/projects/mortle-mobile.png";
 import LinkedInIcon from "../assets/icons/LinkedInIcon";
 import EnvelopeIcon from "../assets/icons/EnvelopeIcon";
 import GithubIcon from "../assets/icons/GithubIcon";
@@ -43,13 +43,13 @@ export const skillTags = [
   "Responsive Design",
 ];
 
-const ProjectLinks = {
+const projectLinks = {
   memery: "https://memery.annarudas.com/",
   mortle: "https://mortle.annarudas.com/",
   notelux: "https://notelux.annarudas.com/",
 };
 
-export const myProjects = [
+export const projectSummaries = [
   {
     name: "memery",
     title: "memory game",
@@ -57,7 +57,7 @@ export const myProjects = [
       "A memory game with card packs of varying sizes and types. You can track your progress and how many turns it took to complete the game.",
     skillTags: ["JavaScript", "React", "Responsive Design", "CSS animations"],
     projectImg: projectImgMemery,
-    link: ProjectLinks.memery,
+    link: projectLinks.memery,
   },
   {
     name: "mortle",
@@ -66,7 +66,7 @@ export const myProjects = [
       "The classic wordle game with added dictionary definitions and saved statistics data.",
     skillTags: ["Typescript", "React", "Responsive Design", "Sass"],
     projectImg: projectImgMortle,
-    link: ProjectLinks.mortle,
+    link: projectLinks.mortle,
   },
   {
     name: "notelux",
@@ -75,48 +75,48 @@ export const myProjects = [
       "A note-taking application with extensive features and responsive UI.",
     skillTags: ["TypeScript", "React", "JavaScript", "CSS modules"],
     projectImg: projectImgNotelux,
-    link: ProjectLinks.notelux,
+    link: projectLinks.notelux,
   },
 ];
 
-export const navLinksMain = ["about", "projects", "contact"];
-export const navLinksProjects = ["memery", "mortle", "notelux"];
+export const mainPageNavigationLinks = ["about", "projects", "contact"];
+export const projectsPageNavigationLinks = ["memery", "mortle", "notelux"];
 
 export const projectDetails = [
   {
     projectName: "memery",
-    text: [
+    projectDetails: [
       "I have been an avid collector of different types of cat images and I have finally found a use for it: a memory game! I love using my developer skills to create fun games like this that I can share with my friends.",
       "The game offers three different types of card pack sizes and types for you to choose from. You can track your progress and how many turns it takes to complete the game.",
       "The most challenging aspect of this project was the styling, specifically with the cards grid, to make sure the cards don't overflow and to maintain a responsive design. This project also made me learn more about css transformations and animations as these are what I used to rotate the cards and create the flipping effect.",
     ],
-    mobileScn: mobileScnMemery,
-    desktopScn: desktopScnMemery,
-    github: "https://github.com/anna-rudas/memery",
-    website: ProjectLinks.memery,
+    mobileScreenshot: mobileScreenshotMemery,
+    desktopScreenshot: desktopScnMemery,
+    githubLink: "https://github.com/anna-rudas/memery",
+    websiteLink: projectLinks.memery,
   },
   {
     projectName: "mortle",
-    text: [
+    projectDetails: [
       "I absolutely love word games, and the classic Wordle is one of my favourites! One thing I was always missing from it though is definitions for the solutions, because sometimes I have no idea what they mean. So, I added them! I have also not set a word limit per day, so it's a perfect game to pass the time while also working my brain.",
       "Besides the main gameplay, there is also the functionality to see your statistics, with information about your win percentage and guess distribution.",
       "My main struggle was to work out the logic of the game and it took me awhile to get that right. What I love the most about this project is the design: it's unique and fun and it gave me a lot of joy to create it.",
     ],
-    mobileScn: mobileScnMortle,
-    desktopScn: desktopScnMortle,
-    github: "https://github.com/anna-rudas/wordle",
-    website: ProjectLinks.mortle,
+    mobileScreenshot: mobileScreenshotMortle,
+    desktopScreenshot: desktopScreenshotMortle,
+    githubLink: "https://github.com/anna-rudas/wordle",
+    websiteLink: projectLinks.mortle,
   },
   {
     projectName: "notelux",
-    text: [
+    projectDetails: [
       "Notelux is a CRUD application, storing data in Local Storage. You can specify what colour you would like your notes to be, choose the theme (with the preference being stored so you don't lose it on reload) and switch between list and grid view.",
       "This project gave me a lot of insight into how React works: I had trouble working out how to reuse components, and implement a Context API. It was very satisfactory to figure these things out and as a result I have gained a lot of confidence in using React.",
       "The most fun part of this project was to implement a way to sort the notes and make sure the last modified is on top, especially because the layout consists of the notes stacked in columns, which I also wanted to keep roughly the same length. This project had a simple concept with a couple of challenging aspects, and I am very satisfied with how it turned out.",
     ],
-    mobileScn: mobileScnNotelux,
-    desktopScn: desktopScnNotelux,
-    github: "https://github.com/anna-rudas/notelux",
-    website: ProjectLinks.notelux,
+    mobileScreenshot: mobileScreenshotNotelux,
+    desktopScreenshot: desktopScreenshotNotelux,
+    githubLink: "https://github.com/anna-rudas/notelux",
+    websiteLink: projectLinks.notelux,
   },
 ];

@@ -1,4 +1,4 @@
-.footer {
+.footerContainer {
   background-color: var(--primary-dark);
   color: var(--primary-light);
   min-height: 20vh;
@@ -13,7 +13,7 @@
   box-shadow: 0 -1px 15px var(--primary-dark);
 }
 
-.iconCon {
+.footerIconsContainer {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -25,7 +25,7 @@
   margin-bottom: var(--margin-md);
 }
 
-.icons {
+.footerIcon {
   width: 30px;
   height: 30px;
   color: var(--primary-light);
@@ -33,14 +33,14 @@
 }
 
 @media (hover: hover) {
-  .icons:hover {
+  .footerIcon:hover {
     color: var(--text-bg);
     transform: scale(1.1);
   }
 }
 
 @media (max-width: 480px) {
-  .iconCon {
+  .footerIconsContainer {
     flex-direction: column;
   }
 }

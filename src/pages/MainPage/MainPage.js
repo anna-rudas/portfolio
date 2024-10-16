@@ -4,14 +4,14 @@ import Contact from "../../components/sections/Contact";
 import Footer from "../../components/features/Footer";
 import Header from "../../components/features/Header";
 import MyProjects from "../../components/sections/MyProjects";
-import { navLinksMain } from "../../data/constants";
+import { mainPageNavigationLinks } from "../../data/constants";
 import HeroMain from "../../components/sections/HeroMain/HeroMain";
 import PageWrapper from "../../components/templates/PageWrapper";
 
 function MainPage() {
   return (
     <PageWrapper>
-      <Header navLinks={navLinksMain} />
+      <Header navigationLinks={mainPageNavigationLinks} />
       <HeroMain />
       <About />
       <MyProjects />

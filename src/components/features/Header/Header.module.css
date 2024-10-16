@@ -1,4 +1,4 @@
-.header {
+.headerContainer {
   position: fixed;
   background-color: var(--primary-dark);
   width: 100%;
@@ -10,7 +10,7 @@
   z-index: 5;
 }
 
-.navList {
+.headerContent {
   width: 100%;
   max-width: 1200px;
   height: 100%;
@@ -20,48 +20,44 @@
   padding: var(--padding-sm) var(--padding-md);
 }
 
-.nav {
+.navigationContainer {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.linksCon {
+.navigationLinksContainer {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: var(--gap-md);
 }
 
-.button {
+.headerButton {
   margin: 0 !important;
   font-size: 1.1rem !important;
 }
 
-.btnHamburger {
+.hamburgerButton {
   display: none;
 }
 
-.iconHamburger {
+.hamburgerIcon {
   display: none;
 }
 
-.buttonMobile {
+.mobileHeaderButton {
   display: none !important;
 }
 
 @media (hover: hover) {
-  .link:focus-visible {
-    font-style: italic;
-  }
-
-  .btnHamburger:hover {
+  .hamburgerButton:hover {
     cursor: pointer;
   }
 }
 
 @media (max-width: 700px) {
-  .btnHamburger {
+  .hamburgerButton {
     background-color: transparent;
     border: none;
     display: flex;
@@ -69,30 +65,30 @@
     align-items: center;
   }
 
-  .iconHamburger {
+  .hamburgerIcon {
     display: flex;
     width: 30px;
     height: 30px;
     fill: var(--primary-light);
   }
 
-  .nav {
+  .navigationContainer {
     display: none;
   }
 
-  .button {
+  .desktopHeaderButton {
     display: none !important;
   }
 
-  .buttonMobile {
+  .mobileHeaderButton {
     display: block !important;
   }
 
-  .linksCon {
+  .navigationLinksContainer {
     flex-direction: column;
   }
 
-  .mobileMenu {
+  .mobileNavigationContainer {
     border-top: 1px solid var(--primary-light);
     border-bottom: 1px solid var(--primary-light);
     background-color: var(--primary-dark);

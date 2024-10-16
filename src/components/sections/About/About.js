@@ -30,15 +30,15 @@ function About() {
         <SecondaryLink to={linkedInLink}>LinkedIn</SecondaryLink> or write me an{" "}
         <SecondaryLink to={emailAddress}>email</SecondaryLink>.
       </p>
-      <div {...className(style.skills)}>
-        <div {...className(style.imgCon)}>
+      <div {...className(style.skillsContainer)}>
+        <div {...className(style.imageContainer)}>
           <img
-            {...className(style.img, shared.frame, shared.frameRight)}
+            {...className(style.aboutImage, shared.frame, shared.frameRight)}
             src={aboutImg}
             alt=""
           />
         </div>
-        <div {...className(style.skillsTextCon)}>
+        <div {...className(style.skillsTextContent)}>
           <div>
             <h3 {...className(textStyles.subtitleText)}>My Skills</h3>
             <p {...className(textStyles.normalText)}>
