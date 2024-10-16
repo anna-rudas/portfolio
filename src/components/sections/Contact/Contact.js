@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { className } from "../../../utilities/helpers";
+import { className, encodeFormData } from "../../../utilities/helpers";
 import * as style from "./Contact.module.css";
 import * as shared from "../../../assets/styles/shared.module.css";
 import * as textStyles from "../../../assets/styles/text-styles.module.css";
@@ -20,7 +20,7 @@ function Contact() {
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encodeURI({ "form-name": "contact-form", ...formValues }),
+      body: encodeFormData({ "form-name": "contact-form", ...formValues }),
     })
       .then(() => {
         setButtonText("Sent!");

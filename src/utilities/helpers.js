@@ -3,3 +3,9 @@ export const className = (...classNames) => {
     className: classNames.filter(Boolean).join(" "),
   };
 };
+
+export function encodeFormData(data) {
+  return Object.keys(data)
+    .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&");
+}
