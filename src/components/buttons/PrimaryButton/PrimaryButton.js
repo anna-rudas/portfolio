@@ -12,6 +12,7 @@ function PrimaryButton({
   extraButtonStyle,
   onButtonClick,
   isButtonToDownload = false,
+  isButtonDisabled,
 }) {
   if (buttonLinkInternal) {
     return (
@@ -52,6 +53,8 @@ function PrimaryButton({
 
   return (
     <button
+      disabled={isButtonDisabled}
+      type="submit"
       {...className(
         style.button,
         textStyles.primaryButtonText,

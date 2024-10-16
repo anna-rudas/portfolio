@@ -1,12 +1,13 @@
 .formContainer {
   display: flex;
   justify-content: center;
+  align-items: center;
+  height: fit-content;
   width: 100%;
   padding: var(--padding-lg) var(--padding-sm);
-  min-height: 50vh;
 }
 
-.formContainer form {
+.formContent {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,44 +26,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 30px;
+  gap: var(--gap-md);
 }
 
-.label {
-  gap: var(--gap-xs);
-}
-
-.senderInfoLabel {
-  display: flex;
-  flex-direction: column;
-  width: 45%;
-}
-
-.textLabel {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-.input {
-  height: 50px;
-  background-color: var(--text-bg);
-  border: 1px solid var(--primary-dark);
-  border-radius: var(--border-radius);
-
-  padding: var(--padding-xs);
-}
-
-.input:focus {
-  outline: none;
-}
-
-.textArea {
-  resize: none;
-  height: 120px;
-}
-
-.btnSubmit {
+.formSubmitButton {
   margin: 0;
   border: 1px solid var(--primary-dark) !important;
   background-color: var(--primary-light) !important;
@@ -75,7 +42,7 @@
   min-height: 45px;
 }
 
-.btnInProgress {
+.buttonInProgressScaleAnimation {
   pointer-events: none;
   animation-duration: 1.4s;
   animation-name: inProgressScale;
@@ -95,14 +62,14 @@
   }
 }
 
-.btnFill {
+.buttonAnimationHelper {
   position: absolute;
   inset: 0;
   background-color: var(--text-bg);
   width: 0;
 }
 
-.btnFillProgress {
+.buttonInProgressFillAnimation {
   animation-duration: 0.7s;
   animation-name: inProgressFill;
   animation-timing-function: ease-in-out;
@@ -110,13 +77,6 @@
   animation-fill-mode: forwards;
 }
 
-.btnText {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 @keyframes inProgressFill {
   0% {
     width: 0;
@@ -128,12 +88,12 @@
 }
 
 @media (hover: hover) {
-  .btnSubmit:hover {
+  .formSubmitButton:hover {
     background-color: var(--primary-dark) !important;
     color: var(--primary-light) !important;
     box-shadow: none !important;
   }
-  .btnSubmit:focus-visible {
+  .formSubmitButton:focus-visible {
     background-color: var(--primary-dark) !important;
     color: var(--primary-light) !important;
     box-shadow: none !important;
@@ -143,15 +103,5 @@
 @media (max-width: 700px) {
   .senderInfoContainer {
     flex-direction: column;
-  }
-
-  .senderInfoLabel {
-    width: 100%;
-  }
-}
-
-@media (max-width: 480px) {
-  .formContainer form {
-    padding: var(--padding-md);
   }
 }

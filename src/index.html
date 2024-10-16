@@ -12,21 +12,15 @@
     <div id="root"></div>
     <form
       method="post"
-      name="contactForm"
+      name="contact-form"
       netlify
       netlify-honeypot="bot-field"
       hidden
     >
-      <input {...className(style.input)} type="text" name="name" />
-      <input {...className(style.input)} type="email" name="email" />
-      <input {...className(style.input)} name="subject" />
-      <textarea
-        {...className(style.textArea,
-        style.input)}
-        name="message"
-        cols="30"
-        rows="10"
-      ></textarea>
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <input name="subject" />
+      <textarea name="message"></textarea>
     </form>
     <script type="module" src="./App.js"></script>
   </body>
